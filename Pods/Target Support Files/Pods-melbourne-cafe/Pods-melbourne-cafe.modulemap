@@ -1,0 +1,6 @@
+framework module Pods_melbourne_cafe {
+  umbrella header "Pods-melbourne-cafe-umbrella.h"
+
+  export *
+  module * { export * }
+}
