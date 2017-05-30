@@ -7,19 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1942F51ED6794C00711EC3 /* melbourne_cafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1942F41ED6794C00711EC3 /* melbourne_cafeUITests.swift */; };
+		DC1943031ED6795C00711EC3 /* melbourne_cafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1943021ED6795C00711EC3 /* melbourne_cafeTests.swift */; };
+		DC19430B1ED6845900711EC3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19430A1ED6845900711EC3 /* Register.swift */; };
+		DC19430D1ED69CD400711EC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19430C1ED69CD400711EC3 /* Constants.swift */; };
+		DC427A5A1ED98AC70001384D /* ConfirmedFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC427A591ED98AC70001384D /* ConfirmedFormVC.swift */; };
+		DC5554401EDD10F0009FF182 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55543F1EDD10F0009FF182 /* Login.swift */; };
+		DC5554421EDD13CA009FF182 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5554411EDD13CA009FF182 /* LoginVC.swift */; };
+		DC58579E1EDA804200530E1B /* TextCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC58579D1EDA804200530E1B /* TextCheck.swift */; };
 		DC6196831ECD15920023C94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6196821ECD15920023C94B /* AppDelegate.swift */; };
-		DC6196851ECD15920023C94B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6196841ECD15920023C94B /* ViewController.swift */; };
+		DC6196851ECD15920023C94B /* SignUpFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6196841ECD15920023C94B /* SignUpFormVC.swift */; };
 		DC6196881ECD15920023C94B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6196861ECD15920023C94B /* Main.storyboard */; };
 		DC61968A1ECD15920023C94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6196891ECD15920023C94B /* Assets.xcassets */; };
 		DC61968D1ECD15920023C94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC61968B1ECD15920023C94B /* LaunchScreen.storyboard */; };
 		E00407F926C779BB4994DDE9 /* Pods_melbourne_cafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77B4CAB69F12D78D427E29F /* Pods_melbourne_cafe.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DC1942F71ED6794C00711EC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC6196771ECD15920023C94B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC61967E1ECD15920023C94B;
+			remoteInfo = "melbourne-cafe";
+		};
+		DC1943051ED6795C00711EC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC6196771ECD15920023C94B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC61967E1ECD15920023C94B;
+			remoteInfo = "melbourne-cafe";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		59AB041E6C7DB3CC20ACEB77 /* Pods-melbourne-cafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-melbourne-cafe.release.xcconfig"; path = "Pods/Target Support Files/Pods-melbourne-cafe/Pods-melbourne-cafe.release.xcconfig"; sourceTree = "<group>"; };
+		DC1942F21ED6794C00711EC3 /* melbourne-cafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "melbourne-cafeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1942F41ED6794C00711EC3 /* melbourne_cafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = melbourne_cafeUITests.swift; sourceTree = "<group>"; };
+		DC1942F61ED6794C00711EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC1943001ED6795C00711EC3 /* melbourne-cafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "melbourne-cafeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1943021ED6795C00711EC3 /* melbourne_cafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = melbourne_cafeTests.swift; sourceTree = "<group>"; };
+		DC1943041ED6795C00711EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC19430A1ED6845900711EC3 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		DC19430C1ED69CD400711EC3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DC427A591ED98AC70001384D /* ConfirmedFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmedFormVC.swift; sourceTree = "<group>"; };
+		DC55543F1EDD10F0009FF182 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		DC5554411EDD13CA009FF182 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DC58579D1EDA804200530E1B /* TextCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCheck.swift; sourceTree = "<group>"; };
 		DC61967F1ECD15920023C94B /* melbourne-cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "melbourne-cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6196821ECD15920023C94B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC6196841ECD15920023C94B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC6196841ECD15920023C94B /* SignUpFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormVC.swift; sourceTree = "<group>"; };
 		DC6196871ECD15920023C94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC6196891ECD15920023C94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC61968C1ECD15920023C94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +66,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC1942EF1ED6794C00711EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1942FD1ED6795C00711EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC61967C1ECD15920023C94B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,10 +108,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DC1942F31ED6794C00711EC3 /* melbourne-cafeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC1942F41ED6794C00711EC3 /* melbourne_cafeUITests.swift */,
+				DC1942F61ED6794C00711EC3 /* Info.plist */,
+			);
+			path = "melbourne-cafeUITests";
+			sourceTree = "<group>";
+		};
+		DC1943011ED6795C00711EC3 /* melbourne-cafeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC1943021ED6795C00711EC3 /* melbourne_cafeTests.swift */,
+				DC1943041ED6795C00711EC3 /* Info.plist */,
+			);
+			path = "melbourne-cafeTests";
+			sourceTree = "<group>";
+		};
 		DC6196761ECD15920023C94B = {
 			isa = PBXGroup;
 			children = (
 				DC6196811ECD15920023C94B /* melbourne-cafe */,
+				DC1942F31ED6794C00711EC3 /* melbourne-cafeUITests */,
+				DC1943011ED6795C00711EC3 /* melbourne-cafeTests */,
 				DC6196801ECD15920023C94B /* Products */,
 				5A0CD1D466BDF9F1B1B33A78 /* Pods */,
 				0858192AF5FE7B28101CEE45 /* Frameworks */,
@@ -71,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				DC61967F1ECD15920023C94B /* melbourne-cafe.app */,
+				DC1942F21ED6794C00711EC3 /* melbourne-cafeUITests.xctest */,
+				DC1943001ED6795C00711EC3 /* melbourne-cafeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,19 +151,93 @@
 		DC6196811ECD15920023C94B /* melbourne-cafe */ = {
 			isa = PBXGroup;
 			children = (
-				DC6196821ECD15920023C94B /* AppDelegate.swift */,
-				DC6196841ECD15920023C94B /* ViewController.swift */,
+				DCC778EE1ED557A4006A97A9 /* Model */,
+				DCC778EF1ED557AD006A97A9 /* View */,
+				DCC778F01ED557B3006A97A9 /* Controller */,
+				DCE849DA1ED9B4E6006EBC2E /* Supporting Files */,
 				DC6196861ECD15920023C94B /* Main.storyboard */,
+				DC19430C1ED69CD400711EC3 /* Constants.swift */,
+			);
+			path = "melbourne-cafe";
+			sourceTree = "<group>";
+		};
+		DCC778EE1ED557A4006A97A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC19430A1ED6845900711EC3 /* Register.swift */,
+				DC58579D1EDA804200530E1B /* TextCheck.swift */,
+				DC55543F1EDD10F0009FF182 /* Login.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DCC778EF1ED557AD006A97A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DCC778F01ED557B3006A97A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC6196841ECD15920023C94B /* SignUpFormVC.swift */,
+				DC427A591ED98AC70001384D /* ConfirmedFormVC.swift */,
+				DC5554411EDD13CA009FF182 /* LoginVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DCE849DA1ED9B4E6006EBC2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC6196821ECD15920023C94B /* AppDelegate.swift */,
 				DC6196891ECD15920023C94B /* Assets.xcassets */,
 				DC61968B1ECD15920023C94B /* LaunchScreen.storyboard */,
 				DC61968E1ECD15920023C94B /* Info.plist */,
 			);
-			path = "melbourne-cafe";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC1942F11ED6794C00711EC3 /* melbourne-cafeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC1942F91ED6794C00711EC3 /* Build configuration list for PBXNativeTarget "melbourne-cafeUITests" */;
+			buildPhases = (
+				DC1942EE1ED6794C00711EC3 /* Sources */,
+				DC1942EF1ED6794C00711EC3 /* Frameworks */,
+				DC1942F01ED6794C00711EC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC1942F81ED6794C00711EC3 /* PBXTargetDependency */,
+			);
+			name = "melbourne-cafeUITests";
+			productName = "melbourne-cafeUITests";
+			productReference = DC1942F21ED6794C00711EC3 /* melbourne-cafeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DC1942FF1ED6795C00711EC3 /* melbourne-cafeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC1943071ED6795C00711EC3 /* Build configuration list for PBXNativeTarget "melbourne-cafeTests" */;
+			buildPhases = (
+				DC1942FC1ED6795C00711EC3 /* Sources */,
+				DC1942FD1ED6795C00711EC3 /* Frameworks */,
+				DC1942FE1ED6795C00711EC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC1943061ED6795C00711EC3 /* PBXTargetDependency */,
+			);
+			name = "melbourne-cafeTests";
+			productName = "melbourne-cafeTests";
+			productReference = DC1943001ED6795C00711EC3 /* melbourne-cafeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DC61967E1ECD15920023C94B /* melbourne-cafe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC6196911ECD15920023C94B /* Build configuration list for PBXNativeTarget "melbourne-cafe" */;
@@ -121,6 +268,18 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Jing Gao";
 				TargetAttributes = {
+					DC1942F11ED6794C00711EC3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 36T8EM67R4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC61967E1ECD15920023C94B;
+					};
+					DC1942FF1ED6795C00711EC3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 36T8EM67R4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC61967E1ECD15920023C94B;
+					};
 					DC61967E1ECD15920023C94B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 36T8EM67R4;
@@ -142,11 +301,27 @@
 			projectRoot = "";
 			targets = (
 				DC61967E1ECD15920023C94B /* melbourne-cafe */,
+				DC1942F11ED6794C00711EC3 /* melbourne-cafeUITests */,
+				DC1942FF1ED6795C00711EC3 /* melbourne-cafeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC1942F01ED6794C00711EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1942FE1ED6795C00711EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC61967D1ECD15920023C94B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,16 +383,51 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC1942EE1ED6794C00711EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1942F51ED6794C00711EC3 /* melbourne_cafeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1942FC1ED6795C00711EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1943031ED6795C00711EC3 /* melbourne_cafeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC61967B1ECD15920023C94B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC6196851ECD15920023C94B /* ViewController.swift in Sources */,
+				DC5554401EDD10F0009FF182 /* Login.swift in Sources */,
+				DC6196851ECD15920023C94B /* SignUpFormVC.swift in Sources */,
+				DC5554421EDD13CA009FF182 /* LoginVC.swift in Sources */,
 				DC6196831ECD15920023C94B /* AppDelegate.swift in Sources */,
+				DC19430B1ED6845900711EC3 /* Register.swift in Sources */,
+				DC58579E1EDA804200530E1B /* TextCheck.swift in Sources */,
+				DC427A5A1ED98AC70001384D /* ConfirmedFormVC.swift in Sources */,
+				DC19430D1ED69CD400711EC3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC1942F81ED6794C00711EC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC61967E1ECD15920023C94B /* melbourne-cafe */;
+			targetProxy = DC1942F71ED6794C00711EC3 /* PBXContainerItemProxy */;
+		};
+		DC1943061ED6795C00711EC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC61967E1ECD15920023C94B /* melbourne-cafe */;
+			targetProxy = DC1943051ED6795C00711EC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC6196861ECD15920023C94B /* Main.storyboard */ = {
@@ -239,6 +449,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DC1942FA1ED6794C00711EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 36T8EM67R4;
+				INFOPLIST_FILE = "melbourne-cafeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinggao.melbourne-cafeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "melbourne-cafe";
+			};
+			name = Debug;
+		};
+		DC1942FB1ED6794C00711EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 36T8EM67R4;
+				INFOPLIST_FILE = "melbourne-cafeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinggao.melbourne-cafeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "melbourne-cafe";
+			};
+			name = Release;
+		};
+		DC1943081ED6795C00711EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 36T8EM67R4;
+				INFOPLIST_FILE = "melbourne-cafeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinggao.melbourne-cafeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/melbourne-cafe.app/melbourne-cafe";
+			};
+			name = Debug;
+		};
+		DC1943091ED6795C00711EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 36T8EM67R4;
+				INFOPLIST_FILE = "melbourne-cafeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinggao.melbourne-cafeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/melbourne-cafe.app/melbourne-cafe";
+			};
+			name = Release;
+		};
 		DC61968F1ECD15920023C94B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -363,6 +627,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC1942F91ED6794C00711EC3 /* Build configuration list for PBXNativeTarget "melbourne-cafeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC1942FA1ED6794C00711EC3 /* Debug */,
+				DC1942FB1ED6794C00711EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC1943071ED6795C00711EC3 /* Build configuration list for PBXNativeTarget "melbourne-cafeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC1943081ED6795C00711EC3 /* Debug */,
+				DC1943091ED6795C00711EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DC61967A1ECD15920023C94B /* Build configuration list for PBXProject "melbourne-cafe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -379,6 +661,7 @@
 				DC6196931ECD15920023C94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

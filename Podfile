@@ -6,5 +6,7 @@ target 'melbourne-cafe' do
   use_frameworks!
 
   # Pods for melbourne-cafe
+  pod 'Alamofire', '~> 4.4'
+  pod 'SwiftHash', git: 'https://github.com/onmyway133/SwiftHash'
 
 end
