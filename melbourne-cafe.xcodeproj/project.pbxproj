@@ -17,9 +17,12 @@
 		DC58579E1EDA804200530E1B /* TextCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC58579D1EDA804200530E1B /* TextCheck.swift */; };
 		DC6196831ECD15920023C94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6196821ECD15920023C94B /* AppDelegate.swift */; };
 		DC6196851ECD15920023C94B /* SignUpFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6196841ECD15920023C94B /* SignUpFormVC.swift */; };
-		DC6196881ECD15920023C94B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6196861ECD15920023C94B /* Main.storyboard */; };
 		DC61968A1ECD15920023C94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6196891ECD15920023C94B /* Assets.xcassets */; };
 		DC61968D1ECD15920023C94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC61968B1ECD15920023C94B /* LaunchScreen.storyboard */; };
+		DC6418F51EDE4BDC0049922C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6418F41EDE4BDC0049922C /* ProfileVC.swift */; };
+		DC6418F91EDE68190049922C /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6418F81EDE68190049922C /* TabBarVC.swift */; };
+		DCB097CA1EDFC16F00F561A0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB097C91EDFC16F00F561A0 /* Profile.swift */; };
+		DCE7CDCB1EDE77BC00D72D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE7CDCA1EDE77BC00D72D1D /* Main.storyboard */; };
 		E00407F926C779BB4994DDE9 /* Pods_melbourne_cafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77B4CAB69F12D78D427E29F /* Pods_melbourne_cafe.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,10 +60,13 @@
 		DC61967F1ECD15920023C94B /* melbourne-cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "melbourne-cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6196821ECD15920023C94B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC6196841ECD15920023C94B /* SignUpFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormVC.swift; sourceTree = "<group>"; };
-		DC6196871ECD15920023C94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC6196891ECD15920023C94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC61968C1ECD15920023C94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC61968E1ECD15920023C94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6418F41EDE4BDC0049922C /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		DC6418F81EDE68190049922C /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		DCB097C91EDFC16F00F561A0 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		DCE7CDCA1EDE77BC00D72D1D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3F1DDB17DB1B57E4D25CBE8 /* Pods-melbourne-cafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-melbourne-cafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-melbourne-cafe/Pods-melbourne-cafe.debug.xcconfig"; sourceTree = "<group>"; };
 		F77B4CAB69F12D78D427E29F /* Pods_melbourne_cafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_melbourne_cafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -155,7 +161,7 @@
 				DCC778EF1ED557AD006A97A9 /* View */,
 				DCC778F01ED557B3006A97A9 /* Controller */,
 				DCE849DA1ED9B4E6006EBC2E /* Supporting Files */,
-				DC6196861ECD15920023C94B /* Main.storyboard */,
+				DCE7CDCA1EDE77BC00D72D1D /* Main.storyboard */,
 				DC19430C1ED69CD400711EC3 /* Constants.swift */,
 			);
 			path = "melbourne-cafe";
@@ -167,6 +173,7 @@
 				DC19430A1ED6845900711EC3 /* Register.swift */,
 				DC58579D1EDA804200530E1B /* TextCheck.swift */,
 				DC55543F1EDD10F0009FF182 /* Login.swift */,
+				DCB097C91EDFC16F00F561A0 /* Profile.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -184,6 +191,8 @@
 				DC6196841ECD15920023C94B /* SignUpFormVC.swift */,
 				DC427A591ED98AC70001384D /* ConfirmedFormVC.swift */,
 				DC5554411EDD13CA009FF182 /* LoginVC.swift */,
+				DC6418F41EDE4BDC0049922C /* ProfileVC.swift */,
+				DC6418F81EDE68190049922C /* TabBarVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -326,9 +335,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE7CDCB1EDE77BC00D72D1D /* Main.storyboard in Resources */,
 				DC61968D1ECD15920023C94B /* LaunchScreen.storyboard in Resources */,
 				DC61968A1ECD15920023C94B /* Assets.xcassets in Resources */,
-				DC6196881ECD15920023C94B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,10 +414,13 @@
 			files = (
 				DC5554401EDD10F0009FF182 /* Login.swift in Sources */,
 				DC6196851ECD15920023C94B /* SignUpFormVC.swift in Sources */,
+				DC6418F91EDE68190049922C /* TabBarVC.swift in Sources */,
 				DC5554421EDD13CA009FF182 /* LoginVC.swift in Sources */,
+				DC6418F51EDE4BDC0049922C /* ProfileVC.swift in Sources */,
 				DC6196831ECD15920023C94B /* AppDelegate.swift in Sources */,
 				DC19430B1ED6845900711EC3 /* Register.swift in Sources */,
 				DC58579E1EDA804200530E1B /* TextCheck.swift in Sources */,
+				DCB097CA1EDFC16F00F561A0 /* Profile.swift in Sources */,
 				DC427A5A1ED98AC70001384D /* ConfirmedFormVC.swift in Sources */,
 				DC19430D1ED69CD400711EC3 /* Constants.swift in Sources */,
 			);
@@ -430,14 +442,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DC6196861ECD15920023C94B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC6196871ECD15920023C94B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DC61968B1ECD15920023C94B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
