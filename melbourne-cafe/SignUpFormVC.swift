@@ -35,13 +35,6 @@ class SignUpFormVC: UIViewController {
     var textCheck = TextCheck()
     
     
-//    @IBAction func submitTapped(_ sender: Any) {
-//        
-//        register.createUser(name: "test", password: "test", email: "test", phone: "test", abn: "test", address: "test")
-//        
-////        print("This is Message: \(register.serverResponse)")
-//        print(register.serverResponse)
-//    }
     @IBAction func nextTapped(_ sender: Any) {
     }
     
