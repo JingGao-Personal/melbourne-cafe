@@ -15,6 +15,7 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var abnLbl: UILabel!
     @IBOutlet weak var addressLbl: UILabel!
     @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var phoneLbl: UILabel!
     
     var profile = Profile()
 
@@ -30,12 +31,27 @@ class ProfileVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Show Editing Page" {
+            let vc = segue.destination as! EditedProfileVC
+            vc.nameText = nameLbl.text!
+            vc.emailText = emailLbl.text!
+            vc.pwdText = UserDefaults.standard.string(forKey: "password")!
+            vc.abnText = abnLbl.text!
+            vc.addressText = addressLbl.text!
+            vc.descriptionText = descriptionLbl.text!
+            vc.phoneText = phoneLbl.text!
+            
+        }
+    }
+    
     func update() {
         nameLbl.text! = profile.serverResponse.value(forKey: "Name") as! String
         emailLbl.text! = UserDefaults.standard.string(forKey: "username")!
         abnLbl.text! = profile.serverResponse.value(forKey: "ABN") as! String
         addressLbl.text! = profile.serverResponse.value(forKey: "Address") as! String
         descriptionLbl.text! = profile.serverResponse.value(forKey: "IFNULL(Description, '')") as! String
+        phoneLbl.text! = profile.serverResponse.value(forKey: "Ph_number") as! String
     }
     
 
