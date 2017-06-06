@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J9Y-tv-NGo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xcl-IG-uY6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -983,6 +983,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkTextField:" destination="lOr-Gq-8Ip" eventType="editingDidEnd" id="OmC-KW-hUX"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I0M-cG-bcV">
                                 <rect key="frame" x="160" y="223" width="97" height="30"/>
@@ -990,6 +993,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkTextField:" destination="lOr-Gq-8Ip" eventType="editingDidEnd" id="nNB-Iy-dCz"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xHn-hZ-ws6">
                                 <rect key="frame" x="160" y="299" width="97" height="30"/>
@@ -997,6 +1003,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkTextField:" destination="lOr-Gq-8Ip" eventType="editingDidEnd" id="ZXY-Gc-Ol9"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ea-Rh-H0p">
                                 <rect key="frame" x="160" y="336" width="97" height="30"/>
@@ -1004,6 +1013,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkTextField:" destination="lOr-Gq-8Ip" eventType="editingDidEnd" id="mxp-J3-L44"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mp3-4n-64n">
                                 <rect key="frame" x="160" y="374" width="97" height="30"/>
@@ -1011,33 +1023,36 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkTextField:" destination="lOr-Gq-8Ip" eventType="editingDidEnd" id="XQ6-eQ-R1a"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Reb-br-VDk">
                                 <rect key="frame" x="45" y="531" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Upload"/>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wrong" translatesAutoresizingMaskIntoConstraints="NO" id="r4P-mL-pbC">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="r4P-mL-pbC">
                                 <rect key="frame" x="265" y="97" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wrong" translatesAutoresizingMaskIntoConstraints="NO" id="FoQ-a9-Ddk">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="FoQ-a9-Ddk">
                                 <rect key="frame" x="265" y="137" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wrong" translatesAutoresizingMaskIntoConstraints="NO" id="xfU-kc-Srd">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="xfU-kc-Srd">
                                 <rect key="frame" x="265" y="223" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wrong" translatesAutoresizingMaskIntoConstraints="NO" id="7Uk-gS-fdf">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="7Uk-gS-fdf">
                                 <rect key="frame" x="265" y="298" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wrong" translatesAutoresizingMaskIntoConstraints="NO" id="j1T-Zi-yHY">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="j1T-Zi-yHY">
                                 <rect key="frame" x="265" y="335" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wrong" translatesAutoresizingMaskIntoConstraints="NO" id="7RC-3J-Za2">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="7RC-3J-Za2">
                                 <rect key="frame" x="265" y="369" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -1053,21 +1068,33 @@
                                 <rect key="frame" x="311" y="139" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="update:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="H8l-xH-5b0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSg-TC-70N">
                                 <rect key="frame" x="311" y="299" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="update:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="ei9-x6-EML"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXz-Lu-PBV">
                                 <rect key="frame" x="311" y="335" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="update:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="Fr8-0n-wl5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0t-8h-ads">
                                 <rect key="frame" x="311" y="369" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="update:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="WFf-RA-AYD"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yZB-eN-KCv">
                                 <rect key="frame" x="182" y="486" width="135" height="121"/>
@@ -1078,6 +1105,9 @@
                                 <rect key="frame" x="311" y="225" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="update:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="5uF-9e-091"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SM-dJ-TIG">
                                 <rect key="frame" x="17" y="420" width="49" height="21"/>
@@ -1092,13 +1122,19 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkTextField:" destination="lOr-Gq-8Ip" eventType="editingDidEnd" id="C36-Ii-Ydt"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSZ-V0-Dio">
                                 <rect key="frame" x="311" y="415" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="update:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="Czg-r2-9O8"/>
+                                </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wrong" translatesAutoresizingMaskIntoConstraints="NO" id="hit-RF-Iyh">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="hit-RF-Iyh">
                                 <rect key="frame" x="265" y="415" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -1757,6 +1793,7 @@
     </scenes>
     <resources>
         <image name="check-box-empty" width="32" height="32"/>
+        <image name="correct" width="32" height="32"/>
         <image name="wrong" width="32" height="32"/>
     </resources>
 </document>

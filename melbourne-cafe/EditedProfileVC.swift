@@ -140,6 +140,9 @@ class EditedProfileVC: UIViewController {
     
     
     @IBAction func update(_ sender: UIButton) {
+        
+        
+        
     }
     
     @IBAction func backTapped(_ sender: Any) {
