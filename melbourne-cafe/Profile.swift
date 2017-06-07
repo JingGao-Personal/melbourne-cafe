@@ -29,13 +29,9 @@ class Profile {
             switch response.result {
                 
             case .success(let value):
-                //converting it as NSDictionary
-//                let jsonData = value as! NSDictionary
+
                 self.serverResponse = value as! NSDictionary
-                
-                //display the message in label
-//                self._serverResponse = jsonData.value(forKey: "message") as! String?
-                
+                                
             case .failure(let error):
                 
                 self._serverResponse = "Error 4xx / 5xx: \(error)"

@@ -47,7 +47,6 @@ class Login {
                 
             case .success(let value):
                 
-                
                 //converting it as NSDictionary
                 let jsonData = value as! NSDictionary
                 
