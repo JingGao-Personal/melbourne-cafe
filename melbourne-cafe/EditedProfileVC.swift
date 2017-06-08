@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditedProfileVC: UIViewController {
+class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var nameLbl: UITextField!
     @IBOutlet weak var emailLbl: UITextField!
@@ -47,10 +47,17 @@ class EditedProfileVC: UIViewController {
     var descriptionText = String()
     var phoneText = String()
     
+    @IBOutlet weak var myImageView: UIImageView!
+    
+    let myPickerController = UIImagePickerController()
+    
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        myPickerController.delegate = self
+        
         
         nameLbl.text! = nameText
         emailLbl.text! = emailText
@@ -149,6 +156,19 @@ class EditedProfileVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func uploadTapped(_ sender: Any) {
+    }
+    
+    @IBAction func selectTapped(_ sender: Any) {
+        
+        myPickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        self.present(myPickerController, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        myImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        self.dismiss(animated: true, completion: nil)
+    }
     
 
     /*

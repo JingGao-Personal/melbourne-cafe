@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xcl-IG-uY6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lOr-Gq-8Ip">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1031,6 +1031,9 @@
                                 <rect key="frame" x="52" y="471" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadTapped:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="zUa-06-rJA"/>
+                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="r4P-mL-pbC">
                                 <rect key="frame" x="265" y="97" width="32" height="32"/>
@@ -1146,6 +1149,9 @@
                                 <rect key="frame" x="58" y="577" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="selectTapped:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="7ud-Em-m0L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1162,6 +1168,7 @@
                         <outlet property="checkPwd" destination="xfU-kc-Srd" id="Py2-EM-Qdt"/>
                         <outlet property="descriptionLbl" destination="mp3-4n-64n" id="j9S-jo-44Z"/>
                         <outlet property="emailLbl" destination="uv0-Dz-Vng" id="JFc-9n-SBo"/>
+                        <outlet property="myImageView" destination="yZB-eN-KCv" id="S02-dI-5nW"/>
                         <outlet property="nameLbl" destination="t6z-9Q-mwg" id="BZF-TB-5mz"/>
                         <outlet property="phoneLbl" destination="1c8-6d-wjD" id="tnA-At-oOS"/>
                         <outlet property="pwdLbl" destination="I0M-cG-bcV" id="wL4-16-0xO"/>
