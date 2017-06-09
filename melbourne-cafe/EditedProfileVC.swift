@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import SwiftHash
 
 class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var nameLbl: UITextField!
-    @IBOutlet weak var emailLbl: UITextField!
     @IBOutlet weak var pwdLbl: UITextField!
     @IBOutlet weak var abnLbl: UITextField!
     @IBOutlet weak var addressLbl: UITextField!
@@ -22,7 +22,6 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     var wrongIcon = UIImage(named: "wrong")
     
     @IBOutlet weak var checkName: UIImageView!
-    @IBOutlet weak var checkEmail: UIImageView!
     @IBOutlet weak var checkPwd: UIImageView!
     @IBOutlet weak var checkAbn: UIImageView!
     @IBOutlet weak var checkAddress: UIImageView!
@@ -30,9 +29,9 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     @IBOutlet weak var checkPhone: UIImageView!
     
     var textCheck = TextCheck()
+    var update = Update()
     
     @IBOutlet weak var updateName: UIButton!
-    @IBOutlet weak var updateEmail: UIButton!
     @IBOutlet weak var updatePwd: UIButton!
     @IBOutlet weak var updateAbn: UIButton!
     @IBOutlet weak var updateAddress: UIButton!
@@ -53,14 +52,14 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         myPickerController.delegate = self
         
+        print(emailText)
         
         nameLbl.text! = nameText
-        emailLbl.text! = emailText
         pwdLbl.text! = pwdText
         abnLbl.text! = abnText
         addressLbl.text! = addressText
@@ -68,10 +67,10 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
         phoneLbl.text! = phoneText
         
         
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -91,14 +90,6 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
                 updateName.isEnabled = true
             }
             
-        case 1:
-            if textCheck.checkEmail(text: emailLbl.text!) == false {
-                checkEmail.image = wrongIcon
-                updateEmail.isEnabled = false
-            } else {
-                checkEmail.image = correctIcon
-                updateEmail.isEnabled = true
-            }
         case 2:
             if textCheck.checkEmpty(text: pwdLbl.text!) == false {
                 checkPwd.image = wrongIcon
@@ -148,7 +139,24 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     
     @IBAction func update(_ sender: UIButton) {
         
+        let tagNumber = sender.tag
         
+        switch tagNumber {
+        case 0:
+            update.updateUser(userInfoType: "Name", updatedUserInfo: nameLbl.text!, email: emailText, completed: {self.updateUI()})
+        case 2:
+            update.updateUser(userInfoType: "Password", updatedUserInfo: MD5(pwdLbl.text!), email: emailText, completed: {self.updateUI()})
+        case 3:
+            update.updateUser(userInfoType: "ABN", updatedUserInfo: abnLbl.text!, email: emailText, completed: {self.updateUI()})
+        case 4:
+            update.updateUser(userInfoType: "Address", updatedUserInfo: addressLbl.text!, email: emailText, completed: {self.updateUI()})
+        case 5:
+            update.updateUser(userInfoType: "Description", updatedUserInfo: descriptionLbl.text!, email: emailText, completed: {self.updateUI()})
+        case 6:
+            update.updateUser(userInfoType: "Ph_number", updatedUserInfo: phoneLbl.text!, email: emailText, completed: {self.updateUI()})
+        default:
+            break
+        }
         
     }
     
@@ -170,15 +178,19 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
         self.dismiss(animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func updateUI() {
+        print(update.serverResponse)
     }
-    */
-
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -23,6 +23,7 @@
 		DC6418F91EDE68190049922C /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6418F81EDE68190049922C /* TabBarVC.swift */; };
 		DCAEB3BA1EE18D3300EED1D8 /* EditedProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAEB3B91EE18D3300EED1D8 /* EditedProfileVC.swift */; };
 		DCB097CA1EDFC16F00F561A0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB097C91EDFC16F00F561A0 /* Profile.swift */; };
+		DCD860B11EE912B100840CF0 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD860B01EE912B100840CF0 /* Update.swift */; };
 		DCE7CDCB1EDE77BC00D72D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE7CDCA1EDE77BC00D72D1D /* Main.storyboard */; };
 		E00407F926C779BB4994DDE9 /* Pods_melbourne_cafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77B4CAB69F12D78D427E29F /* Pods_melbourne_cafe.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		DC6418F81EDE68190049922C /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		DCAEB3B91EE18D3300EED1D8 /* EditedProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditedProfileVC.swift; sourceTree = "<group>"; };
 		DCB097C91EDFC16F00F561A0 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		DCD860B01EE912B100840CF0 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		DCE7CDCA1EDE77BC00D72D1D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3F1DDB17DB1B57E4D25CBE8 /* Pods-melbourne-cafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-melbourne-cafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-melbourne-cafe/Pods-melbourne-cafe.debug.xcconfig"; sourceTree = "<group>"; };
 		F77B4CAB69F12D78D427E29F /* Pods_melbourne_cafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_melbourne_cafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +178,7 @@
 				DC58579D1EDA804200530E1B /* TextCheck.swift */,
 				DC55543F1EDD10F0009FF182 /* Login.swift */,
 				DCB097C91EDFC16F00F561A0 /* Profile.swift */,
+				DCD860B01EE912B100840CF0 /* Update.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				DCAEB3BA1EE18D3300EED1D8 /* EditedProfileVC.swift in Sources */,
 				DC6196831ECD15920023C94B /* AppDelegate.swift in Sources */,
 				DC19430B1ED6845900711EC3 /* Register.swift in Sources */,
+				DCD860B11EE912B100840CF0 /* Update.swift in Sources */,
 				DC58579E1EDA804200530E1B /* TextCheck.swift in Sources */,
 				DCB097CA1EDFC16F00F561A0 /* Profile.swift in Sources */,
 				DC427A5A1ED98AC70001384D /* ConfirmedFormVC.swift in Sources */,

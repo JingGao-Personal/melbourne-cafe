@@ -35,8 +35,8 @@ class ProfileVC: UIViewController {
         if segue.identifier == "Show Editing Page" {
             let vc = segue.destination as! EditedProfileVC
             vc.nameText = nameLbl.text!
-            vc.emailText = emailLbl.text!
             vc.pwdText = UserDefaults.standard.string(forKey: "password")!
+            vc.emailText = UserDefaults.standard.string(forKey: "username")!
             vc.abnText = abnLbl.text!
             vc.addressText = addressLbl.text!
             vc.descriptionText = descriptionLbl.text!

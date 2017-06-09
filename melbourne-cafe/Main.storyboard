@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lOr-Gq-8Ip">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xcl-IG-uY6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -847,7 +847,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR1-ie-Zhy">
-                                <rect key="frame" x="167" y="285" width="41" height="21"/>
+                                <rect key="frame" x="167" y="285" width="165" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -889,7 +889,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kJ-p9-xde" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2702" y="993"/>
+            <point key="canvasLocation" x="2701.5999999999999" y="992.65367316341838"/>
         </scene>
         <!--Edited ProfileVC-->
         <scene sceneID="va8-EO-lpn">
@@ -932,13 +932,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8S-PL-OPw">
-                                <rect key="frame" x="14" y="142" width="41" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YE-zr-zhp">
                                 <rect key="frame" x="14" y="232" width="74" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -975,16 +968,6 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="checkTextField:" destination="lOr-Gq-8Ip" eventType="editingDidEnd" id="Mxn-nj-opU"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uv0-Dz-Vng">
-                                <rect key="frame" x="160" y="137" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="checkTextField:" destination="lOr-Gq-8Ip" eventType="editingDidEnd" id="OmC-KW-hUX"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I0M-cG-bcV">
@@ -1039,10 +1022,6 @@
                                 <rect key="frame" x="265" y="97" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="FoQ-a9-Ddk">
-                                <rect key="frame" x="265" y="137" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="xfU-kc-Srd">
                                 <rect key="frame" x="265" y="223" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -1067,15 +1046,7 @@
                                     <action selector="update:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="spY-yE-b66"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP1-xP-3zh">
-                                <rect key="frame" x="311" y="139" width="51" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Update"/>
-                                <connections>
-                                    <action selector="update:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="H8l-xH-5b0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSg-TC-70N">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSg-TC-70N">
                                 <rect key="frame" x="311" y="299" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update"/>
@@ -1083,7 +1054,7 @@
                                     <action selector="update:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="ei9-x6-EML"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXz-Lu-PBV">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXz-Lu-PBV">
                                 <rect key="frame" x="311" y="335" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update"/>
@@ -1091,7 +1062,7 @@
                                     <action selector="update:" destination="lOr-Gq-8Ip" eventType="touchUpInside" id="Fr8-0n-wl5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0t-8h-ads">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0t-8h-ads">
                                 <rect key="frame" x="311" y="369" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update"/>
@@ -1104,7 +1075,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsV-E3-Rui">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsV-E3-Rui">
                                 <rect key="frame" x="311" y="225" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update"/>
@@ -1162,12 +1133,10 @@
                         <outlet property="checkAbn" destination="7Uk-gS-fdf" id="RuB-c0-Wr6"/>
                         <outlet property="checkAddress" destination="j1T-Zi-yHY" id="Eea-E3-e2D"/>
                         <outlet property="checkDescription" destination="7RC-3J-Za2" id="LZN-uz-j98"/>
-                        <outlet property="checkEmail" destination="FoQ-a9-Ddk" id="SdQ-wo-Go0"/>
                         <outlet property="checkName" destination="r4P-mL-pbC" id="icm-8v-vLI"/>
                         <outlet property="checkPhone" destination="hit-RF-Iyh" id="FUy-B6-LUC"/>
                         <outlet property="checkPwd" destination="xfU-kc-Srd" id="Py2-EM-Qdt"/>
                         <outlet property="descriptionLbl" destination="mp3-4n-64n" id="j9S-jo-44Z"/>
-                        <outlet property="emailLbl" destination="uv0-Dz-Vng" id="JFc-9n-SBo"/>
                         <outlet property="myImageView" destination="yZB-eN-KCv" id="S02-dI-5nW"/>
                         <outlet property="nameLbl" destination="t6z-9Q-mwg" id="BZF-TB-5mz"/>
                         <outlet property="phoneLbl" destination="1c8-6d-wjD" id="tnA-At-oOS"/>
@@ -1175,7 +1144,6 @@
                         <outlet property="updateAbn" destination="rSg-TC-70N" id="wTU-3I-cvL"/>
                         <outlet property="updateAddress" destination="eXz-Lu-PBV" id="zuA-QS-iPO"/>
                         <outlet property="updateDescription" destination="g0t-8h-ads" id="dpD-p0-5vS"/>
-                        <outlet property="updateEmail" destination="pP1-xP-3zh" id="ZyP-Cq-u4I"/>
                         <outlet property="updateName" destination="GNg-61-022" id="rxA-na-CvR"/>
                         <outlet property="updatePhone" destination="ZSZ-V0-Dio" id="LCJ-Bl-1K2"/>
                         <outlet property="updatePwd" destination="AsV-E3-Rui" id="HGr-ki-fY8"/>
