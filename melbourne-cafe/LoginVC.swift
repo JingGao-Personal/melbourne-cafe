@@ -22,7 +22,7 @@ class LoginVC: UIViewController {
     
     func updateUI() {
         if login.serverResponse == "login successfully" {
-            UserDefaults.standard.set(emailLbl.text!, forKey: "username")
+            UserDefaults.standard.set(emailLbl.text!, forKey: "email")
             UserDefaults.standard.set(pwdLbl.text!, forKey: "password")
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let nextVC = storyBoard.instantiateViewController(withIdentifier: "tabBar")

@@ -885,6 +885,7 @@
                         <outlet property="emailLbl" destination="cR1-ie-Zhy" id="JrK-aL-OCy"/>
                         <outlet property="nameLbl" destination="EeR-Qd-ufk" id="sSC-QR-cmI"/>
                         <outlet property="phoneLbl" destination="w4h-0G-IOo" id="dMV-Z7-SB2"/>
+                        <outlet property="profileImage" destination="q1s-9E-ouZ" id="vJ8-Eo-Xyv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kJ-p9-xde" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1147,6 +1148,7 @@
                         <outlet property="updateName" destination="GNg-61-022" id="rxA-na-CvR"/>
                         <outlet property="updatePhone" destination="ZSZ-V0-Dio" id="LCJ-Bl-1K2"/>
                         <outlet property="updatePwd" destination="AsV-E3-Rui" id="HGr-ki-fY8"/>
+                        <outlet property="uploadingIndicator" destination="3b6-Ls-JA7" id="aPz-1s-EFz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59G-Mc-ALP" userLabel="First Responder" sceneMemberID="firstResponder"/>

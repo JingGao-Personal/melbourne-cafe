@@ -18,11 +18,16 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var phoneLbl: UILabel!
     
     var profile = Profile()
+    var imageFunctions = ImageFunctions()
+    var imagePath: String = ""
+    
+    @IBOutlet weak var profileImage: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        profile.myProfile(email: UserDefaults.standard.string(forKey: "username")!, completed: {self.update()})
-
+        profile.myProfile(email: UserDefaults.standard.string(forKey: "email")!, completed: {self.update()})
+        
+        imageFunctions.loadImage(url: DEFAULT_IMAGE_URL, complete: {self.updateImage()})
         // Do any additional setup after loading the view.
     }
 
@@ -36,23 +41,35 @@ class ProfileVC: UIViewController {
             let vc = segue.destination as! EditedProfileVC
             vc.nameText = nameLbl.text!
             vc.pwdText = UserDefaults.standard.string(forKey: "password")!
-            vc.emailText = UserDefaults.standard.string(forKey: "username")!
+            vc.emailText = UserDefaults.standard.string(forKey: "email")!
             vc.abnText = abnLbl.text!
             vc.addressText = addressLbl.text!
             vc.descriptionText = descriptionLbl.text!
             vc.phoneText = phoneLbl.text!
+            vc._profileImage = profileImage.image!
             
         }
     }
     
     func update() {
         nameLbl.text! = profile.serverResponse.value(forKey: "Name") as! String
-        emailLbl.text! = UserDefaults.standard.string(forKey: "username")!
+        emailLbl.text! = UserDefaults.standard.string(forKey: "email")!
         abnLbl.text! = profile.serverResponse.value(forKey: "ABN") as! String
         addressLbl.text! = profile.serverResponse.value(forKey: "Address") as! String
         descriptionLbl.text! = profile.serverResponse.value(forKey: "IFNULL(Description, '')") as! String
         phoneLbl.text! = profile.serverResponse.value(forKey: "Ph_number") as! String
+        imagePath = profile.serverResponse.value(forKey: "IFNULL(Image, '')") as! String
+        
+//        if imagePath == "" {
+//            imageFunctions.loadImage(url: DEFAULT_IMAGE_URL, complete: {self.updateImage()})
+//        } else {
+//            imageFunctions.loadImage(url: PROFILE_IMAGE_URL + imagePath, complete: {self.updateImage()})
+//        }
+
+    
     }
     
-
+    func updateImage() {
+        profileImage.image = imageFunctions._image
+    }
 }

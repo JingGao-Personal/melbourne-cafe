@@ -30,6 +30,7 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     
     var textCheck = TextCheck()
     var update = Update()
+    var imageFunctions = ImageFunctions()
     
     @IBOutlet weak var updateName: UIButton!
     @IBOutlet weak var updatePwd: UIButton!
@@ -47,17 +48,17 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     var phoneText = String()
     
     @IBOutlet weak var myImageView: UIImageView!
+    var _profileImage = UIImage()
     
     let myPickerController = UIImagePickerController()
     
-    
+    @IBOutlet weak var uploadingIndicator: UIActivityIndicatorView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         myPickerController.delegate = self
         
-        print(emailText)
         
         nameLbl.text! = nameText
         pwdLbl.text! = pwdText
@@ -65,6 +66,7 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
         addressLbl.text! = addressText
         descriptionLbl.text! = descriptionText
         phoneLbl.text! = phoneText
+        myImageView.image = _profileImage
         
         
         
@@ -165,6 +167,16 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     }
     
     @IBAction func uploadTapped(_ sender: Any) {
+        if myImageView.image == nil {
+            let alertController = UIAlertController(title: "Notification", message: "please select an image", preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+            
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        } else {
+            uploadingIndicator.startAnimating()
+            imageFunctions.uploadImage(image: myImageView.image!, email: emailText, complete: {self.uploadingIndicator.stopAnimating()})
+        }
     }
     
     @IBAction func selectTapped(_ sender: Any) {
