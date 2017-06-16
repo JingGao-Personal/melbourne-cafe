@@ -27,7 +27,6 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
         profile.myProfile(email: UserDefaults.standard.string(forKey: "email")!, completed: {self.update()})
         
-        imageFunctions.loadImage(url: DEFAULT_IMAGE_URL, complete: {self.updateImage()})
         // Do any additional setup after loading the view.
     }
 
@@ -60,11 +59,12 @@ class ProfileVC: UIViewController {
         phoneLbl.text! = profile.serverResponse.value(forKey: "Ph_number") as! String
         imagePath = profile.serverResponse.value(forKey: "IFNULL(Image, '')") as! String
         
-//        if imagePath == "" {
-//            imageFunctions.loadImage(url: DEFAULT_IMAGE_URL, complete: {self.updateImage()})
-//        } else {
-//            imageFunctions.loadImage(url: PROFILE_IMAGE_URL + imagePath, complete: {self.updateImage()})
-//        }
+        if imagePath == "" {
+            imageFunctions.loadImage(url: DEFAULT_IMAGE_URL, complete: {self.updateImage()})
+        } else {
+            imageFunctions.loadImage(url: PROFILE_IMAGE_URL + imagePath, complete: {self.updateImage()})
+            
+        }
 
     
     }

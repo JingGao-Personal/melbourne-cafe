@@ -37,7 +37,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
-        locationManager.requestLocation()
+        locationManager.startUpdatingLocation()
     }
     
     override func didReceiveMemoryWarning() {
