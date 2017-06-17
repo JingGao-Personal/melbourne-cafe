@@ -68,7 +68,6 @@ class ImageFunctions {
             Alamofire.request(url, method: .get).responseData { response in
                 if let data = response.result.value {
                     let image = UIImage(data: data)!
-    //                let imageData = UIImageJPEGRepresentation(image, 0.2)!
                     self._image = image
                     print("load image successfully")
                 } else {
