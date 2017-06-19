@@ -15,6 +15,7 @@
 		DC5554401EDD10F0009FF182 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55543F1EDD10F0009FF182 /* Login.swift */; };
 		DC5554421EDD13CA009FF182 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5554411EDD13CA009FF182 /* LoginVC.swift */; };
 		DC58579E1EDA804200530E1B /* TextCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC58579D1EDA804200530E1B /* TextCheck.swift */; };
+		DC605D941EF7933F00E3EFB8 /* CafeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC605D931EF7933F00E3EFB8 /* CafeCell.swift */; };
 		DC6196831ECD15920023C94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6196821ECD15920023C94B /* AppDelegate.swift */; };
 		DC6196851ECD15920023C94B /* SignUpFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6196841ECD15920023C94B /* SignUpFormVC.swift */; };
 		DC61968A1ECD15920023C94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6196891ECD15920023C94B /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		DC55543F1EDD10F0009FF182 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		DC5554411EDD13CA009FF182 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DC58579D1EDA804200530E1B /* TextCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCheck.swift; sourceTree = "<group>"; };
+		DC605D931EF7933F00E3EFB8 /* CafeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeCell.swift; sourceTree = "<group>"; };
 		DC61967F1ECD15920023C94B /* melbourne-cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "melbourne-cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6196821ECD15920023C94B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC6196841ECD15920023C94B /* SignUpFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormVC.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				DCAEB3B91EE18D3300EED1D8 /* EditedProfileVC.swift */,
 				DCEA5D1F1EF2405700E6C1A1 /* MapVC.swift */,
 				DCC89A2C1EF6690A00087C9A /* CafeListVC.swift */,
+				DC605D931EF7933F00E3EFB8 /* CafeCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 			files = (
 				DCADC9131EEA46F9007C1641 /* ImageFunctions.swift in Sources */,
 				DC5554401EDD10F0009FF182 /* Login.swift in Sources */,
+				DC605D941EF7933F00E3EFB8 /* CafeCell.swift in Sources */,
 				DC6196851ECD15920023C94B /* SignUpFormVC.swift in Sources */,
 				DC6418F91EDE68190049922C /* TabBarVC.swift in Sources */,
 				DC5554421EDD13CA009FF182 /* LoginVC.swift in Sources */,

@@ -22,7 +22,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
         let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
         mapView.setRegion(region, animated: true)
-        self.mapView.showsUserLocation = true
+        mapView.showsUserLocation = true
         
         
     }
@@ -36,6 +36,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         super.viewDidLoad()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = 20
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
