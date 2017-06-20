@@ -11,9 +11,11 @@ import UIKit
 class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var cafeTableView: UITableView!
+    var loadCafeList = LoadCafeList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadCafeList.loadList(email: UserDefaults.standard.string(forKey: "email")!, completed: {self.updateList()})
         cafeTableView.delegate = self
         cafeTableView.dataSource = self
         
@@ -41,6 +43,9 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func updateList() {
+        
+    }
     
     
     /*
