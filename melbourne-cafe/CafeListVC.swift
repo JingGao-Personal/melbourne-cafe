@@ -12,7 +12,7 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var cafeTableView: UITableView!
     var loadCafeList = LoadCafeList()
-    
+    var list: NSDictionary!
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCafeList.loadList(email: UserDefaults.standard.string(forKey: "email")!, completed: {self.updateList()})
@@ -39,12 +39,12 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cafeCell", for: indexPath) as? CafeCell else {
              fatalError("The dequeued cell is not an instance of cafeCell.")
         }
-        
         return cell
     }
     
     func updateList() {
-        
+        list = loadCafeList.serverResponse.value(forKey: "data") as! NSDictionary
+        print(list.count)
     }
     
     
