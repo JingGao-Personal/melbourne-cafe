@@ -13,6 +13,7 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var cafeTableView: UITableView!
     var loadCafeList = LoadCafeList()
     var list: NSDictionary!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCafeList.loadList(email: UserDefaults.standard.string(forKey: "email")!, completed: {self.updateList()})
