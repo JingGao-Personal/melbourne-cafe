@@ -12,11 +12,18 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var cafeTableView: UITableView!
     var loadCafeList = LoadCafeList()
-    var list: NSDictionary!
+    var list:NSDictionary = [:] {
+        didSet
+        {
+            self.cafeTableView.reloadData()
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCafeList.loadList(email: UserDefaults.standard.string(forKey: "email")!, completed: {self.updateList()})
+        
         cafeTableView.delegate = self
         cafeTableView.dataSource = self
         
@@ -33,7 +40,7 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return (self.list.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,7 +52,6 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func updateList() {
         list = loadCafeList.serverResponse.value(forKey: "data") as! NSDictionary
-        print(list.count)
     }
     
     

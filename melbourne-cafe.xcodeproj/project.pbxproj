@@ -31,7 +31,6 @@
 		DCE7CDCB1EDE77BC00D72D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE7CDCA1EDE77BC00D72D1D /* Main.storyboard */; };
 		DCEA5D201EF2405700E6C1A1 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA5D1F1EF2405700E6C1A1 /* MapVC.swift */; };
 		DCEA5D221EF2441A00E6C1A1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA5D211EF2441A00E6C1A1 /* CoreLocation.framework */; };
-		DCF3C6C81EFA11D000F9AC3A /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3C6C71EFA11D000F9AC3A /* ListData.swift */; };
 		E00407F926C779BB4994DDE9 /* Pods_melbourne_cafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77B4CAB69F12D78D427E29F /* Pods_melbourne_cafe.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +84,6 @@
 		DCEA5D1F1EF2405700E6C1A1 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		DCEA5D211EF2441A00E6C1A1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DCEA5D231EF2549B00E6C1A1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		DCF3C6C71EFA11D000F9AC3A /* ListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
 		F3F1DDB17DB1B57E4D25CBE8 /* Pods-melbourne-cafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-melbourne-cafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-melbourne-cafe/Pods-melbourne-cafe.debug.xcconfig"; sourceTree = "<group>"; };
 		F77B4CAB69F12D78D427E29F /* Pods_melbourne_cafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_melbourne_cafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -199,7 +197,6 @@
 				DCD860B01EE912B100840CF0 /* Update.swift */,
 				DCADC9121EEA46F9007C1641 /* ImageFunctions.swift */,
 				DC605D951EF8BA9700E3EFB8 /* LoadCafeList.swift */,
-				DCF3C6C71EFA11D000F9AC3A /* ListData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -461,7 +458,6 @@
 				DCD860B11EE912B100840CF0 /* Update.swift in Sources */,
 				DCEA5D201EF2405700E6C1A1 /* MapVC.swift in Sources */,
 				DC58579E1EDA804200530E1B /* TextCheck.swift in Sources */,
-				DCF3C6C81EFA11D000F9AC3A /* ListData.swift in Sources */,
 				DCB097CA1EDFC16F00F561A0 /* Profile.swift in Sources */,
 				DC427A5A1ED98AC70001384D /* ConfirmedFormVC.swift in Sources */,
 				DC19430D1ED69CD400711EC3 /* Constants.swift in Sources */,

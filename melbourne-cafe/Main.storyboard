@@ -772,7 +772,7 @@
         <!--Shops-->
         <scene sceneID="ffA-ec-G21">
             <objects>
-                <viewController id="kXT-iU-TMr" customClass="CafeListVC" customModule="melbourne_cafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cafeShops" id="kXT-iU-TMr" customClass="CafeListVC" customModule="melbourne_cafe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bea-gB-MmJ"/>
                         <viewControllerLayoutGuide type="bottom" id="SnY-kg-y46"/>
