@@ -12,6 +12,15 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var cafeTableView: UITableView!
     var loadCafeList = LoadCafeList()
+    var imageFunctions = ImageFunctions()
+    var cafeArray = [Cafe]() {
+        didSet
+        {
+            self.cafeTableView.reloadData()
+        }
+    }
+    
+    
     var list:NSDictionary = [:] {
         didSet
         {
@@ -45,13 +54,46 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cafeCell", for: indexPath) as? CafeCell else {
-             fatalError("The dequeued cell is not an instance of cafeCell.")
+            fatalError("The dequeued cell is not an instance of cafeCell.")
         }
+        
+        
+        
+        cell.cafe = self.cafeArray[indexPath.row]
+        
+        
         return cell
     }
     
     func updateList() {
         list = loadCafeList.serverResponse.value(forKey: "data") as! NSDictionary
+        
+        
+        for item in list
+        {
+            let cafe = Cafe()
+            
+            let data = item.value as! NSDictionary
+            cafe.cafeName = data["Name"] as! String
+            cafe.imagePath = data["IFNULL(Image, '')"] as! String
+            
+            cafeArray.append(cafe)
+            
+            if cafe.imagePath == "" {
+                imageFunctions.loadImage(url: DEFAULT_IMAGE_URL, complete: {cafe.image = self.imageFunctions._image
+                    self.cafeTableView.reloadData()
+                })
+            } else {
+                imageFunctions.loadImage(url: PROFILE_IMAGE_URL + cafe.imagePath, complete: {cafe.image = self.imageFunctions._image
+                    self.cafeTableView.reloadData()
+                })
+                
+            }
+            
+            
+        }
+        
+        
     }
     
     

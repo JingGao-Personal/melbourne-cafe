@@ -15,6 +15,7 @@
 		DC5554401EDD10F0009FF182 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55543F1EDD10F0009FF182 /* Login.swift */; };
 		DC5554421EDD13CA009FF182 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5554411EDD13CA009FF182 /* LoginVC.swift */; };
 		DC58579E1EDA804200530E1B /* TextCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC58579D1EDA804200530E1B /* TextCheck.swift */; };
+		DC58721C1F01F56A0077ED9F /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC58721B1F01F56A0077ED9F /* Cafe.swift */; };
 		DC605D941EF7933F00E3EFB8 /* CafeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC605D931EF7933F00E3EFB8 /* CafeCell.swift */; };
 		DC605D961EF8BA9700E3EFB8 /* LoadCafeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC605D951EF8BA9700E3EFB8 /* LoadCafeList.swift */; };
 		DC6196831ECD15920023C94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6196821ECD15920023C94B /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		DC55543F1EDD10F0009FF182 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		DC5554411EDD13CA009FF182 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DC58579D1EDA804200530E1B /* TextCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCheck.swift; sourceTree = "<group>"; };
+		DC58721B1F01F56A0077ED9F /* Cafe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		DC605D931EF7933F00E3EFB8 /* CafeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeCell.swift; sourceTree = "<group>"; };
 		DC605D951EF8BA9700E3EFB8 /* LoadCafeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadCafeList.swift; sourceTree = "<group>"; };
 		DC61967F1ECD15920023C94B /* melbourne-cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "melbourne-cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +199,7 @@
 				DCD860B01EE912B100840CF0 /* Update.swift */,
 				DCADC9121EEA46F9007C1641 /* ImageFunctions.swift */,
 				DC605D951EF8BA9700E3EFB8 /* LoadCafeList.swift */,
+				DC58721B1F01F56A0077ED9F /* Cafe.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 		DCC778EF1ED557AD006A97A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DC605D931EF7933F00E3EFB8 /* CafeCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -219,7 +223,6 @@
 				DCAEB3B91EE18D3300EED1D8 /* EditedProfileVC.swift */,
 				DCEA5D1F1EF2405700E6C1A1 /* MapVC.swift */,
 				DCC89A2C1EF6690A00087C9A /* CafeListVC.swift */,
-				DC605D931EF7933F00E3EFB8 /* CafeCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC58721C1F01F56A0077ED9F /* Cafe.swift in Sources */,
 				DCADC9131EEA46F9007C1641 /* ImageFunctions.swift in Sources */,
 				DC5554401EDD10F0009FF182 /* Login.swift in Sources */,
 				DC605D941EF7933F00E3EFB8 /* CafeCell.swift in Sources */,

@@ -15,16 +15,27 @@ class CafeCell: UITableViewCell {
     @IBOutlet weak var stars: UILabel!
     @IBOutlet weak var distance: UILabel!
     
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+//    var imageFunctions = ImageFunctions()
+    
+    var cafe:Cafe?
+        {
+        didSet
+        {
+            self.updateUI()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    private func updateUI()
+    {
+        self.cafeName.text = cafe?.cafeName
+        
+//        if cafe?.imagePath == "" {
+//            imageFunctions.loadImage(url: DEFAULT_IMAGE_URL, complete: {self.infoImage.image = self.imageFunctions._image})
+//        } else {
+//            imageFunctions.loadImage(url: PROFILE_IMAGE_URL + (cafe?.imagePath)!, complete: {self.infoImage.image = self.imageFunctions._image})
+//            
+//        }
+        self.infoImage.image = cafe?.image
     }
-
+    
 }
