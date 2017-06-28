@@ -36,6 +36,7 @@ class CafeCell: UITableViewCell {
 //            
 //        }
         self.infoImage.image = cafe?.image
+        self.distance.text! = String(format: "%.2f", cafe!.distance) + " m"
     }
     
 }

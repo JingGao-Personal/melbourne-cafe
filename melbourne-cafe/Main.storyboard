@@ -835,7 +835,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="150m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AP9-YV-aMY">
-                                                    <rect key="frame" x="236" y="27" width="43" height="21"/>
+                                                    <rect key="frame" x="236" y="27" width="95" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -858,6 +858,7 @@
                     <tabBarItem key="tabBarItem" title="Shops" id="TSh-Eo-DeW"/>
                     <connections>
                         <outlet property="cafeTableView" destination="y9u-aV-1BK" id="k7O-x6-0bq"/>
+                        <segue destination="Sru-MP-1Lc" kind="show" identifier="showDetail" id="jPz-Ek-1rR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Tz-5I-4MD" userLabel="First Responder" sceneMemberID="firstResponder"/>

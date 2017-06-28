@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import CoreLocation
 
-class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var cafeTableView: UITableView!
+    var locationManager = CLLocationManager()
     var loadCafeList = LoadCafeList()
     var imageFunctions = ImageFunctions()
     var cafeArray = [Cafe]() {
@@ -76,6 +78,11 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             let data = item.value as! NSDictionary
             cafe.cafeName = data["Name"] as! String
             cafe.imagePath = data["IFNULL(Image, '')"] as! String
+            let latitude = data["Latitude"] as! String
+            let longtitude = data["Longtitude"] as! String
+            let coordinate = CLLocation(latitude: Double(latitude)!, longitude: Double(longtitude)!)
+            let currentLocation = locationManager.location
+            cafe.distance = coordinate.distance(from: currentLocation!)
             
             cafeArray.append(cafe)
             
@@ -93,18 +100,20 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             
         }
         
+        self.cafeArray.sort(by: {$0.0.distance < $0.1.distance})
+        self.cafeTableView.reloadData()
         
     }
     
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        <#code#>
+//    }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+    
     
 }
