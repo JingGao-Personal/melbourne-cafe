@@ -39,4 +39,5 @@ class CafeCell: UITableViewCell {
         self.distance.text! = String(format: "%.2f", cafe!.distance) + " m"
     }
     
+    
 }

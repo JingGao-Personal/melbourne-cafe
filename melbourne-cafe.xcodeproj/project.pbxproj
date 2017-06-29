@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC15644C1F04A3E400243FC4 /* CafeCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC15644B1F04A3E400243FC4 /* CafeCellVC.swift */; };
 		DC1942F51ED6794C00711EC3 /* melbourne_cafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1942F41ED6794C00711EC3 /* melbourne_cafeUITests.swift */; };
 		DC1943031ED6795C00711EC3 /* melbourne_cafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1943021ED6795C00711EC3 /* melbourne_cafeTests.swift */; };
 		DC19430B1ED6845900711EC3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19430A1ED6845900711EC3 /* Register.swift */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		59AB041E6C7DB3CC20ACEB77 /* Pods-melbourne-cafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-melbourne-cafe.release.xcconfig"; path = "Pods/Target Support Files/Pods-melbourne-cafe/Pods-melbourne-cafe.release.xcconfig"; sourceTree = "<group>"; };
+		DC15644B1F04A3E400243FC4 /* CafeCellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeCellVC.swift; sourceTree = "<group>"; };
 		DC1942F21ED6794C00711EC3 /* melbourne-cafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "melbourne-cafeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1942F41ED6794C00711EC3 /* melbourne_cafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = melbourne_cafeUITests.swift; sourceTree = "<group>"; };
 		DC1942F61ED6794C00711EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				DCAEB3B91EE18D3300EED1D8 /* EditedProfileVC.swift */,
 				DCEA5D1F1EF2405700E6C1A1 /* MapVC.swift */,
 				DCC89A2C1EF6690A00087C9A /* CafeListVC.swift */,
+				DC15644B1F04A3E400243FC4 /* CafeCellVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				DCAEB3BA1EE18D3300EED1D8 /* EditedProfileVC.swift in Sources */,
 				DC605D961EF8BA9700E3EFB8 /* LoadCafeList.swift in Sources */,
 				DC6196831ECD15920023C94B /* AppDelegate.swift in Sources */,
+				DC15644C1F04A3E400243FC4 /* CafeCellVC.swift in Sources */,
 				DC19430B1ED6845900711EC3 /* Register.swift in Sources */,
 				DCD860B11EE912B100840CF0 /* Update.swift in Sources */,
 				DCEA5D201EF2405700E6C1A1 /* MapVC.swift in Sources */,

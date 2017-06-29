@@ -717,12 +717,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u9p-iX-GaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448.80000000000001" y="1951.5742128935533"/>
+            <point key="canvasLocation" x="482" y="1952"/>
         </scene>
-        <!--View Controller-->
+        <!--Cafe CellVC-->
         <scene sceneID="nuc-i3-Vm7">
             <objects>
-                <viewController id="Sru-MP-1Lc" sceneMemberID="viewController">
+                <viewController id="Sru-MP-1Lc" customClass="CafeCellVC" customModule="melbourne_cafe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YHK-18-pUt"/>
                         <viewControllerLayoutGuide type="bottom" id="hQ6-VY-QoS"/>
@@ -746,6 +746,9 @@
                                         <rect key="frame" x="25" y="20" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backTapped:" destination="Sru-MP-1Lc" eventType="touchUpInside" id="EDq-ZK-oww"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84598562290000001" green="0.85447332519999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -753,6 +756,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eeW-J1-8Is">
                                 <rect key="frame" x="62" y="124" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epG-dV-ILL">
                                 <rect key="frame" x="163" y="407" width="49" height="21"/>
@@ -764,10 +768,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="cafeImage" destination="eeW-J1-8Is" id="7CY-gh-9Qo"/>
+                        <outlet property="nameLbl" destination="Ztp-LN-yUp" id="2nY-jP-Uxn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRO-SX-6XG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-703.20000000000005" y="1188.7556221889056"/>
+            <point key="canvasLocation" x="-682.39999999999998" y="1951.5742128935533"/>
         </scene>
         <!--Shops-->
         <scene sceneID="ffA-ec-G21">
@@ -848,6 +856,7 @@
                                             <outlet property="distance" destination="AP9-YV-aMY" id="0bQ-wJ-up2"/>
                                             <outlet property="infoImage" destination="RnW-sj-FVY" id="iTG-jY-7Pd"/>
                                             <outlet property="stars" destination="lEM-BP-rRc" id="hW5-9B-38d"/>
+                                            <segue destination="Sru-MP-1Lc" kind="show" identifier="ShowCafeCellVC" id="u3g-sV-MdA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -858,7 +867,6 @@
                     <tabBarItem key="tabBarItem" title="Shops" id="TSh-Eo-DeW"/>
                     <connections>
                         <outlet property="cafeTableView" destination="y9u-aV-1BK" id="k7O-x6-0bq"/>
-                        <segue destination="Sru-MP-1Lc" kind="show" identifier="showDetail" id="jPz-Ek-1rR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Tz-5I-4MD" userLabel="First Responder" sceneMemberID="firstResponder"/>

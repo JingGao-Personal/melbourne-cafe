@@ -73,8 +73,8 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
         
         for item in list
         {
-            let cafe = Cafe()
             
+            let cafe = Cafe()
             let data = item.value as! NSDictionary
             cafe.cafeName = data["Name"] as! String
             cafe.imagePath = data["IFNULL(Image, '')"] as! String
@@ -105,14 +105,18 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
         
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        cafeTableView.deselectRow(at: indexPath, animated: true)
+    }
     
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "ShowCafeCellVC" {
+            let vc = segue.destination as! CafeCellVC
+            
+            
+        }
     }
     
     
