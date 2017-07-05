@@ -51,6 +51,7 @@ class ProfileVC: UIViewController {
     }
     
     func update() {
+        UserDefaults.standard.set(profile.serverResponse.value(forKey: "shopId"), forKey: "shopId")
         nameLbl.text! = profile.serverResponse.value(forKey: "Name") as! String
         emailLbl.text! = UserDefaults.standard.string(forKey: "email")!
         abnLbl.text! = profile.serverResponse.value(forKey: "ABN") as! String

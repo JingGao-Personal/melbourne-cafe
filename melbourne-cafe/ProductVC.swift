@@ -1,38 +1,24 @@
 //
-//  CafeCellVC.swift
+//  ProductVC.swift
 //  melbourne-cafe
 //
-//  Created by Jing Gao on 29/6/17.
+//  Created by Jing Gao on 5/7/17.
 //  Copyright © 2017 Jing Gao. All rights reserved.
 //
 
 import UIKit
 
-class CafeCellVC: UIViewController {
-    
-    var cafe:Cafe!
-    
-    @IBOutlet weak var nameLbl: UILabel!
-    @IBOutlet weak var cafeImage: UIImageView!
-    
+class ProductVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.nameLbl.text = cafe.cafeName
-        self.cafeImage.image = cafe.image
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func backTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
     }
     
 

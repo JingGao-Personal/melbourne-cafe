@@ -64,18 +64,18 @@ class ImageFunctions {
         }
     }
     
-        func loadImage(url: String, complete: @escaping ()->()) {
-            Alamofire.request(url, method: .get).responseData { response in
-                if let data = response.result.value {
-                    let image = UIImage(data: data)!
-                    self._image = image
-                    print("load image successfully")
-                } else {
-                    print("error")
-                }
-                complete()
+    func loadImage(url: String, complete: @escaping ()->()) {
+        Alamofire.request(url, method: .get).responseData { response in
+            if let data = response.result.value {
+                let image = UIImage(data: data)!
+                self._image = image
+                print("load image successfully")
+            } else {
+                print("error")
             }
+            complete()
         }
+    }
     
     
 }

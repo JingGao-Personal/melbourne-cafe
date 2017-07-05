@@ -106,15 +106,19 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        cafeTableView.deselectRow(at: indexPath, animated: true)
+        self.selectedCafe = cafeArray[indexPath.row]
+        performSegue(withIdentifier: "ShowCafeCellVC", sender: self)
+        
+        
     }
     
     // MARK: - Navigation
+    var selectedCafe:Cafe?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowCafeCellVC" {
             let vc = segue.destination as! CafeCellVC
-            
+            vc.cafe = selectedCafe!
             
         }
     }
