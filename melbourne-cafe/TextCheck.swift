@@ -63,7 +63,7 @@ class TextCheck {
         
     }
     
-    func checkPrice(price: Double) -> Bool {
+    func checkPrice(price: String) -> Bool {
         let price_REGEX = "^(?:|0|[1-9]\\d*)(?:\\.\\d*)?$"
         let priceTest = NSPredicate(format: "SELF MATCHES %@", price_REGEX)
         return priceTest.evaluate(with: price)

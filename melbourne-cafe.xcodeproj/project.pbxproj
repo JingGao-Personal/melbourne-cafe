@@ -34,6 +34,7 @@
 		DCB097CA1EDFC16F00F561A0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB097C91EDFC16F00F561A0 /* Profile.swift */; };
 		DCC89A2D1EF6690A00087C9A /* CafeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC89A2C1EF6690A00087C9A /* CafeListVC.swift */; };
 		DCD860B11EE912B100840CF0 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD860B01EE912B100840CF0 /* Update.swift */; };
+		DCE77BD61F10D7150094E244 /* CoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE77BD51F10D7150094E244 /* CoffeeCell.swift */; };
 		DCE7CDCB1EDE77BC00D72D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE7CDCA1EDE77BC00D72D1D /* Main.storyboard */; };
 		DCEA5D201EF2405700E6C1A1 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA5D1F1EF2405700E6C1A1 /* MapVC.swift */; };
 		DCEA5D221EF2441A00E6C1A1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA5D211EF2441A00E6C1A1 /* CoreLocation.framework */; };
@@ -92,6 +93,7 @@
 		DCB097C91EDFC16F00F561A0 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DCC89A2C1EF6690A00087C9A /* CafeListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeListVC.swift; sourceTree = "<group>"; };
 		DCD860B01EE912B100840CF0 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		DCE77BD51F10D7150094E244 /* CoffeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeCell.swift; sourceTree = "<group>"; };
 		DCE7CDCA1EDE77BC00D72D1D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DCEA5D1F1EF2405700E6C1A1 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		DCEA5D211EF2441A00E6C1A1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				DC605D931EF7933F00E3EFB8 /* CafeCell.swift */,
+				DCE77BD51F10D7150094E244 /* CoffeeCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				DC5554421EDD13CA009FF182 /* LoginVC.swift in Sources */,
 				DC6418F51EDE4BDC0049922C /* ProfileVC.swift in Sources */,
 				DCAEB3BA1EE18D3300EED1D8 /* EditedProfileVC.swift in Sources */,
+				DCE77BD61F10D7150094E244 /* CoffeeCell.swift in Sources */,
 				DC605D961EF8BA9700E3EFB8 /* LoadCafeList.swift in Sources */,
 				DC6196831ECD15920023C94B /* AppDelegate.swift in Sources */,
 				DC15644C1F04A3E400243FC4 /* CafeCellVC.swift in Sources */,

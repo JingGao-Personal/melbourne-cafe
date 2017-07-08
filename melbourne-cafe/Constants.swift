@@ -17,5 +17,6 @@ let DEFAULT_IMAGE_URL = "http://127.0.0.1:8888/cafeshop/images/tmac.jpg"
 let PROFILE_IMAGE_URL = "http://127.0.0.1:8888/cafeshop/"
 let CAFE_LIST_URL = "http://127.0.0.1:8888/cafeshop/cafeList.php"
 let CREATE_COFFEE_URL = "http://127.0.0.1:8888/cafeshop/addCoffeeAPI.php"
+let UPLOAD_COFFEE_IMAGE_URL = "http://127.0.0.1:8888/cafeshop/uploadCoffeeImage.php"
 
 

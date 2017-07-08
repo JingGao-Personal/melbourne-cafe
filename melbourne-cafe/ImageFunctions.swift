@@ -64,6 +64,40 @@ class ImageFunctions {
         }
     }
     
+    func uploadCoffeeImage(image: UIImage, shopId: Int, name: String, complete: @escaping ()->()) {
+        let imageData = UIImageJPEGRepresentation(image, 0.2)!
+        
+        let imageName = String(shopId) + name + ".jpeg"
+        
+        Alamofire.upload(multipartFormData: { multipartFormData in
+            multipartFormData.append(imageData, withName: "fileToUpload",fileName: imageName, mimeType: "image/jpeg")
+        },
+                         to: UPLOAD_COFFEE_IMAGE_URL)
+        { (result) in
+            switch result {
+            case .success(let upload, _, _):
+                
+                upload.uploadProgress(closure: { (progress) in
+                    print("Upload Progress: \(progress.fractionCompleted)")
+                })
+                
+                upload.responseJSON { response in
+                    print(response.result.value!)
+                }
+                
+            case .failure(let encodingError):
+                print(encodingError)
+            }
+            
+            complete()
+            
+            
+        }
+
+        
+        
+    }
+    
     func loadImage(url: String, complete: @escaping ()->()) {
         Alamofire.request(url, method: .get).responseData { response in
             if let data = response.result.value {
