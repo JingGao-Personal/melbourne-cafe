@@ -475,7 +475,7 @@
         <!--Product-->
         <scene sceneID="wjg-BT-iD5">
             <objects>
-                <viewController id="Mx6-0z-4Uj" customClass="ProductVC" customModule="melbourne_cafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mx6-0z-4Uj" customClass="CoffeeVC" customModule="melbourne_cafe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FLa-cS-XKS"/>
                         <viewControllerLayoutGuide type="bottom" id="jJN-P9-CK9"/>
@@ -511,7 +511,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="9ua-yb-Xjw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoffeeCell" rowHeight="82" id="9ua-yb-Xjw" customClass="CoffeeCell" customModule="melbourne_cafe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9ua-yb-Xjw" id="Wry-HW-37i">
@@ -519,7 +519,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LATTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U16-Vw-yVf">
-                                                    <rect key="frame" x="22" y="30" width="50" height="21"/>
+                                                    <rect key="frame" x="22" y="30" width="174" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -532,6 +532,10 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="coffeeImage" destination="3gy-3O-q6f" id="dcV-Wk-e3b"/>
+                                            <outlet property="coffeeNameLbl" destination="U16-Vw-yVf" id="fJo-9s-0W0"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -539,10 +543,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Product" id="9rq-Dw-KrU"/>
+                    <connections>
+                        <outlet property="coffeeTableView" destination="Zrn-tu-8iD" id="YGg-Ec-ymh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gb-RF-c0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2790" y="146"/>
+            <point key="canvasLocation" x="2781.5999999999999" y="115.59220389805098"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yr3-S8-P6W">

@@ -36,7 +36,6 @@ class CreateCoffee {
             "smallPrice" : smallPrice,
             "imagePath" : imagePath
         ]
-        print("test")
         //Sending http post request
         Alamofire.request(CREATE_COFFEE_URL, method: .post, parameters: parameters).responseJSON {
             

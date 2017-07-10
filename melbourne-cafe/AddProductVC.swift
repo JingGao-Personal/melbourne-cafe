@@ -49,7 +49,7 @@ class AddProductVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         largePriceCheck.image = wrongIcon
         mediumPriceCheck.image = wrongIcon
         smallPriceCheck.image = wrongIcon
-        coffeeData = ["Cappuccino", "Espresso", "The Flat White", "Latte"]
+        coffeeData = ["Cappuccino", "Espresso", "The-Flat-White", "Latte"]
         
         // Do any additional setup after loading the view.
     }
@@ -128,7 +128,7 @@ class AddProductVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         } else {
             uploadIndicator.startAnimating()
             
-            createCoffee.addCoffee(shopId: UserDefaults.standard.integer(forKey: "shopId"), name: coffeeData[coffeeNamePicker.selectedRow(inComponent: 0)], largePrice: Double(largePriceText.text!)!, mediumPirce: Double(mediumPriceText.text!)!, smallPrice: Double(smallPriceText.text!)!, imagePath: String(UserDefaults.standard.integer(forKey: "shopId")) + coffeeData[coffeeNamePicker.selectedRow(inComponent: 0)] + ".jpeg", completed: {self.responseUpdate()})
+            createCoffee.addCoffee(shopId: UserDefaults.standard.integer(forKey: "shopId"), name: coffeeData[coffeeNamePicker.selectedRow(inComponent: 0)], largePrice: Double(largePriceText.text!)!, mediumPirce: Double(mediumPriceText.text!)!, smallPrice: Double(smallPriceText.text!)!, imagePath: "coffeeImages/" + String(UserDefaults.standard.integer(forKey: "shopId")) + coffeeData[coffeeNamePicker.selectedRow(inComponent: 0)] + ".jpeg", completed: {self.responseUpdate()})
             
             imageFunctions.uploadCoffeeImage(image: coffeeImage.image!, shopId: UserDefaults.standard.integer(forKey: "shopId"), name: coffeeData[coffeeNamePicker.selectedRow(inComponent: 0)], complete: {self.uploadIndicator.stopAnimating()})
         }
