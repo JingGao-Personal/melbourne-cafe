@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mx6-0z-4Uj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MaL-L9-04E">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -488,8 +488,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Management" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90g-PO-KUW">
-                                        <rect key="frame" x="105" y="25" width="166" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coffee Management" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90g-PO-KUW">
+                                        <rect key="frame" x="110" y="25" width="156" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -545,6 +545,7 @@
                     <tabBarItem key="tabBarItem" title="Product" id="9rq-Dw-KrU"/>
                     <connections>
                         <outlet property="coffeeTableView" destination="Zrn-tu-8iD" id="YGg-Ec-ymh"/>
+                        <segue destination="cPN-6S-ioH" kind="show" identifier="ShowEditCoffeePage" id="VBH-nM-seN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gb-RF-c0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1366,10 +1367,10 @@
             </objects>
             <point key="canvasLocation" x="3862" y="1429"/>
         </scene>
-        <!--View Controller-->
+        <!--Coffee CellVC-->
         <scene sceneID="KGU-9O-cKK">
             <objects>
-                <viewController id="cPN-6S-ioH" sceneMemberID="viewController">
+                <viewController id="cPN-6S-ioH" customClass="CoffeeCellVC" customModule="melbourne_cafe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VVZ-mL-Gvc"/>
                         <viewControllerLayoutGuide type="bottom" id="VH0-D8-TT7"/>
@@ -1393,6 +1394,9 @@
                                         <rect key="frame" x="23" y="21" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backTapped:" destination="cPN-6S-ioH" eventType="touchUpInside" id="n6h-Ij-OCZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84598562290000001" green="0.85447332519999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1424,13 +1428,14 @@
                                 <state key="normal" title="Confirm"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UX6-Eo-Hnj">
-                                <rect key="frame" x="43" y="353" width="50" height="30"/>
+                                <rect key="frame" x="46" y="353" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Upload"/>
+                                <state key="normal" title="Select"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRZ-i2-mUV">
                                 <rect key="frame" x="151" y="324" width="106" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medium Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x85-WK-mv6">
                                 <rect key="frame" x="42" y="200" width="105" height="21"/>
@@ -1461,15 +1466,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="coffeeImage" destination="dRZ-i2-mUV" id="Th2-cW-4tB"/>
+                        <outlet property="coffeeNameLbl" destination="ZgA-dD-fcG" id="qnb-cD-bHG"/>
+                        <outlet property="largePriceTxt" destination="PpM-iZ-oMv" id="nWx-Kf-5Ui"/>
+                        <outlet property="mediumPriceTxt" destination="u6d-9w-Vd2" id="fu3-bA-aI1"/>
+                        <outlet property="smallPriceTxt" destination="mRr-Sg-vjk" id="Ygk-xe-9GH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swe-n2-HK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3862" y="753"/>
+            <point key="canvasLocation" x="3969" y="643"/>
         </scene>
-        <!--Add ProductVC-->
+        <!--Add CoffeeVC-->
         <scene sceneID="AWp-yv-0aj">
             <objects>
-                <viewController id="hzz-Ky-LbQ" customClass="AddProductVC" customModule="melbourne_cafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hzz-Ky-LbQ" customClass="AddCoffeeVC" customModule="melbourne_cafe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d4w-2O-O13"/>
                         <viewControllerLayoutGuide type="bottom" id="nA5-v6-QfX"/>
@@ -1638,7 +1650,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Au0-bd-sjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3861.5999999999999" y="23.838080959520241"/>
+            <point key="canvasLocation" x="3969" y="-50"/>
         </scene>
         <!--Order-->
         <scene sceneID="wdt-XB-f7R">

@@ -71,6 +71,9 @@ class CoffeeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             let data = item.value as! NSDictionary
             coffee.coffeeName = data["name"] as! String
             coffee.imagePath = data["imagePath"] as! String
+            coffee.largePrice = data["largePrice"] as! Double
+            coffee.mediumPrice = data["mediumPrice"] as! Double
+            coffee.smallPrice = data["smallPrice"] as! Double
             coffeeArray.append(coffee)
             
             if coffee.imagePath == "" {
@@ -87,6 +90,20 @@ class CoffeeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         
         self.coffeeTableView.reloadData()
+    }
+    
+    var selectedCoffee:Coffee?
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedCoffee = coffeeArray[indexPath.row]
+        performSegue(withIdentifier: "ShowEditCoffeePage", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowEditCoffeePage" {
+            let vc = segue.destination as! CoffeeCellVC
+            vc.coffee = selectedCoffee
+        }
     }
     
 

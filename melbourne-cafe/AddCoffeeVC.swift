@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddProductVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddCoffeeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var coffeeNamePicker: UIPickerView!
     var coffeeData: [String] = [String]()
