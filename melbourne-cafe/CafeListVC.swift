@@ -108,8 +108,6 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedCafe = cafeArray[indexPath.row]
         performSegue(withIdentifier: "ShowCafeCellVC", sender: self)
-        
-        
     }
     
     // MARK: - Navigation

@@ -131,6 +131,7 @@ class AddCoffeeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
             createCoffee.addCoffee(shopId: UserDefaults.standard.integer(forKey: "shopId"), name: coffeeData[coffeeNamePicker.selectedRow(inComponent: 0)], largePrice: Double(largePriceText.text!)!, mediumPirce: Double(mediumPriceText.text!)!, smallPrice: Double(smallPriceText.text!)!, imagePath: "coffeeImages/" + String(UserDefaults.standard.integer(forKey: "shopId")) + coffeeData[coffeeNamePicker.selectedRow(inComponent: 0)] + ".jpeg", completed: {self.responseUpdate()})
             
             imageFunctions.uploadCoffeeImage(image: coffeeImage.image!, shopId: UserDefaults.standard.integer(forKey: "shopId"), name: coffeeData[coffeeNamePicker.selectedRow(inComponent: 0)], complete: {self.uploadIndicator.stopAnimating()})
+            dismiss(animated: true, completion: nil)
         }
     }
     

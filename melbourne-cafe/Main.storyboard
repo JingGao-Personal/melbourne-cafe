@@ -1423,14 +1423,20 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1z-Iq-xdF">
-                                <rect key="frame" x="157" y="494" width="55" height="30"/>
+                                <rect key="frame" x="134" y="494" width="103" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Confirm"/>
+                                <state key="normal" title="Confirm to Edit"/>
+                                <connections>
+                                    <action selector="confrimToEdit:" destination="cPN-6S-ioH" eventType="touchUpInside" id="Ctn-oT-G4x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UX6-Eo-Hnj">
                                 <rect key="frame" x="46" y="353" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="selectTapped:" destination="cPN-6S-ioH" eventType="touchUpInside" id="p4j-ol-Ee4"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRZ-i2-mUV">
                                 <rect key="frame" x="151" y="324" width="106" height="89"/>
@@ -1462,7 +1468,14 @@
                                 <rect key="frame" x="165" y="544" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="cPN-6S-ioH" eventType="touchUpInside" id="5Hd-Fb-AdY"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ePQ-mQ-u1b">
+                                <rect key="frame" x="179" y="446" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1472,6 +1485,7 @@
                         <outlet property="largePriceTxt" destination="PpM-iZ-oMv" id="nWx-Kf-5Ui"/>
                         <outlet property="mediumPriceTxt" destination="u6d-9w-Vd2" id="fu3-bA-aI1"/>
                         <outlet property="smallPriceTxt" destination="mRr-Sg-vjk" id="Ygk-xe-9GH"/>
+                        <outlet property="uploadIndicator" destination="ePQ-mQ-u1b" id="EaJ-eL-CWx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swe-n2-HK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
