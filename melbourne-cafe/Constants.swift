@@ -22,5 +22,6 @@ let PRODUCT_LIST_URL = "http://127.0.0.1:8888/cafeshop/productList.php"
 let IMAGE_URL = "http://127.0.0.1:8888/cafeshop/"
 let UPDATE_COFFEE_URL = "http://127.0.0.1:8888/cafeshop/updateCoffeeInfo.php"
 let DELETE_COFFEE_URL = "http://127.0.0.1:8888/cafeshop/deleteCoffee.php"
+let DELETE_COFFEE_IMAGE = "http://127.0.0.1:8888/cafeshop/deleteCoffeeImage.php"
 
 

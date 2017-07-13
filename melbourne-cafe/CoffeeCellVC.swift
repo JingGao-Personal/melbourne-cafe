@@ -72,11 +72,18 @@ class CoffeeCellVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
     
     @IBAction func deleteTapped(_ sender: Any) {
         deleteCoffee.deleteCoffee(shopId: UserDefaults.standard.integer(forKey: "shopId"), name: coffeeNameLbl.text!, completed: {self.deleteInfoResponse()})
+        
+        imageFunctions.deleteCoffeeImage(target_file: String(UserDefaults.standard.integer(forKey: "shopId")) + coffeeNameLbl.text! + ".jpeg", complete: {self.imageDeleteResponse()})
+        
         dismiss(animated: true, completion: nil)
     }
     
     func deleteInfoResponse() {
         print(deleteCoffee.serverResponse)
+    }
+    
+    func imageDeleteResponse() {
+        print(imageFunctions.serverResonse)
     }
     
 

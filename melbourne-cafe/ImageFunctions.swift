@@ -111,5 +111,38 @@ class ImageFunctions {
         }
     }
     
+    func deleteCoffeeImage(target_file: String, complete: @escaping ()->()) {
+        
+        let parameters: Parameters = [
+            "target_file": "coffeeImages/" + target_file
+        ]
+        
+        Alamofire.request(DELETE_COFFEE_IMAGE, method: .post, parameters: parameters).responseJSON {
+            
+            response in
+            //printing response
+            print(response)
+            
+            switch response.result {
+                
+            case .success(let value):
+                
+                //converting it as NSDictionary
+                let jsonData = value as! NSDictionary
+                
+                //display the message in label
+                self._serverResponse = jsonData.value(forKey: "message") as! String?
+                
+            case .failure(let error):
+                
+                self._serverResponse = "Error 4xx / 5xx: \(error)"
+            }
+            
+            complete()
+            
+        }
+
+    }
+    
     
 }
