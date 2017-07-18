@@ -12,6 +12,9 @@
 		DC1943031ED6795C00711EC3 /* melbourne_cafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1943021ED6795C00711EC3 /* melbourne_cafeTests.swift */; };
 		DC19430B1ED6845900711EC3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19430A1ED6845900711EC3 /* Register.swift */; };
 		DC19430D1ED69CD400711EC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19430C1ED69CD400711EC3 /* Constants.swift */; };
+		DC2ED1101F1DB86F00FB130C /* LoadOrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2ED10F1F1DB86F00FB130C /* LoadOrderList.swift */; };
+		DC2ED1121F1DB93600FB130C /* OrderManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2ED1111F1DB93600FB130C /* OrderManagementVC.swift */; };
+		DC2ED1141F1DBB3800FB130C /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2ED1131F1DBB3800FB130C /* OrderCell.swift */; };
 		DC427A5A1ED98AC70001384D /* ConfirmedFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC427A591ED98AC70001384D /* ConfirmedFormVC.swift */; };
 		DC4454AB1F1324D800D7D413 /* LoadProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4454AA1F1324D800D7D413 /* LoadProductList.swift */; };
 		DC4454AD1F13AEAD00D7D413 /* CoffeeCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4454AC1F13AEAD00D7D413 /* CoffeeCellVC.swift */; };
@@ -28,6 +31,7 @@
 		DC6418F51EDE4BDC0049922C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6418F41EDE4BDC0049922C /* ProfileVC.swift */; };
 		DC6418F91EDE68190049922C /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6418F81EDE68190049922C /* TabBarVC.swift */; };
 		DC66A3A91F15D8F400B5B55D /* UpdateCoffeeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66A3A81F15D8F400B5B55D /* UpdateCoffeeInfo.swift */; };
+		DC9EACD11F1AF79700827F10 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9EACD01F1AF79700827F10 /* Order.swift */; };
 		DC9F46ED1F0C84B500F5B3C3 /* CoffeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F46EC1F0C84B500F5B3C3 /* CoffeeVC.swift */; };
 		DC9F46EF1F0C855700F5B3C3 /* AddCoffeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F46EE1F0C855700F5B3C3 /* AddCoffeeVC.swift */; };
 		DC9F46F11F0CA3D000F5B3C3 /* CreateCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F46F01F0CA3D000F5B3C3 /* CreateCoffee.swift */; };
@@ -73,6 +77,9 @@
 		DC1943041ED6795C00711EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC19430A1ED6845900711EC3 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		DC19430C1ED69CD400711EC3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DC2ED10F1F1DB86F00FB130C /* LoadOrderList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadOrderList.swift; sourceTree = "<group>"; };
+		DC2ED1111F1DB93600FB130C /* OrderManagementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderManagementVC.swift; sourceTree = "<group>"; };
+		DC2ED1131F1DBB3800FB130C /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		DC427A591ED98AC70001384D /* ConfirmedFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmedFormVC.swift; sourceTree = "<group>"; };
 		DC4454AA1F1324D800D7D413 /* LoadProductList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadProductList.swift; sourceTree = "<group>"; };
 		DC4454AC1F13AEAD00D7D413 /* CoffeeCellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeCellVC.swift; sourceTree = "<group>"; };
@@ -91,6 +98,7 @@
 		DC6418F41EDE4BDC0049922C /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		DC6418F81EDE68190049922C /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		DC66A3A81F15D8F400B5B55D /* UpdateCoffeeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateCoffeeInfo.swift; sourceTree = "<group>"; };
+		DC9EACD01F1AF79700827F10 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		DC9F46EC1F0C84B500F5B3C3 /* CoffeeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeVC.swift; sourceTree = "<group>"; };
 		DC9F46EE1F0C855700F5B3C3 /* AddCoffeeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoffeeVC.swift; sourceTree = "<group>"; };
 		DC9F46F01F0CA3D000F5B3C3 /* CreateCoffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCoffee.swift; sourceTree = "<group>"; };
@@ -225,6 +233,8 @@
 				DC4454AA1F1324D800D7D413 /* LoadProductList.swift */,
 				DC66A3A81F15D8F400B5B55D /* UpdateCoffeeInfo.swift */,
 				DCA31A2C1F16475600D8E83D /* DeleteCoffee.swift */,
+				DC9EACD01F1AF79700827F10 /* Order.swift */,
+				DC2ED10F1F1DB86F00FB130C /* LoadOrderList.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -234,6 +244,7 @@
 			children = (
 				DC605D931EF7933F00E3EFB8 /* CafeCell.swift */,
 				DCE77BD51F10D7150094E244 /* CoffeeCell.swift */,
+				DC2ED1131F1DBB3800FB130C /* OrderCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -253,6 +264,7 @@
 				DC9F46EC1F0C84B500F5B3C3 /* CoffeeVC.swift */,
 				DC9F46EE1F0C855700F5B3C3 /* AddCoffeeVC.swift */,
 				DC4454AC1F13AEAD00D7D413 /* CoffeeCellVC.swift */,
+				DC2ED1111F1DB93600FB130C /* OrderManagementVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -478,17 +490,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC9F46ED1F0C84B500F5B3C3 /* CoffeeVC.swift in Sources */,
+				DC2ED1141F1DBB3800FB130C /* OrderCell.swift in Sources */,
 				DC58721C1F01F56A0077ED9F /* Cafe.swift in Sources */,
 				DCADC9131EEA46F9007C1641 /* ImageFunctions.swift in Sources */,
 				DC5554401EDD10F0009FF182 /* Login.swift in Sources */,
+				DC2ED1121F1DB93600FB130C /* OrderManagementVC.swift in Sources */,
 				DC605D941EF7933F00E3EFB8 /* CafeCell.swift in Sources */,
 				DC6196851ECD15920023C94B /* SignUpFormVC.swift in Sources */,
 				DC4454AD1F13AEAD00D7D413 /* CoffeeCellVC.swift in Sources */,
+				DC2ED1101F1DB86F00FB130C /* LoadOrderList.swift in Sources */,
 				DC6418F91EDE68190049922C /* TabBarVC.swift in Sources */,
 				DC5554421EDD13CA009FF182 /* LoginVC.swift in Sources */,
 				DC6418F51EDE4BDC0049922C /* ProfileVC.swift in Sources */,
 				DCAEB3BA1EE18D3300EED1D8 /* EditedProfileVC.swift in Sources */,
 				DCE77BD61F10D7150094E244 /* CoffeeCell.swift in Sources */,
+				DC9EACD11F1AF79700827F10 /* Order.swift in Sources */,
 				DC605D961EF8BA9700E3EFB8 /* LoadCafeList.swift in Sources */,
 				DC6196831ECD15920023C94B /* AppDelegate.swift in Sources */,
 				DC4454AB1F1324D800D7D413 /* LoadProductList.swift in Sources */,
