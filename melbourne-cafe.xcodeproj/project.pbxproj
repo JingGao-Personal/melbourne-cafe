@@ -15,6 +15,10 @@
 		DC2ED1101F1DB86F00FB130C /* LoadOrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2ED10F1F1DB86F00FB130C /* LoadOrderList.swift */; };
 		DC2ED1121F1DB93600FB130C /* OrderManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2ED1111F1DB93600FB130C /* OrderManagementVC.swift */; };
 		DC2ED1141F1DBB3800FB130C /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2ED1131F1DBB3800FB130C /* OrderCell.swift */; };
+		DC2ED1161F1DD9B900FB130C /* LoadOrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2ED1151F1DD9B900FB130C /* LoadOrderHistory.swift */; };
+		DC2ED1181F1DDA0900FB130C /* OrderHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2ED1171F1DDA0900FB130C /* OrderHistoryVC.swift */; };
+		DC2ED11A1F1DDA6900FB130C /* OrderHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2ED1191F1DDA6900FB130C /* OrderHistoryCell.swift */; };
+		DC2ED11C1F1E1A4600FB130C /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2ED11B1F1E1A4600FB130C /* OrderHistory.swift */; };
 		DC427A5A1ED98AC70001384D /* ConfirmedFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC427A591ED98AC70001384D /* ConfirmedFormVC.swift */; };
 		DC4454AB1F1324D800D7D413 /* LoadProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4454AA1F1324D800D7D413 /* LoadProductList.swift */; };
 		DC4454AD1F13AEAD00D7D413 /* CoffeeCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4454AC1F13AEAD00D7D413 /* CoffeeCellVC.swift */; };
@@ -80,6 +84,10 @@
 		DC2ED10F1F1DB86F00FB130C /* LoadOrderList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadOrderList.swift; sourceTree = "<group>"; };
 		DC2ED1111F1DB93600FB130C /* OrderManagementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderManagementVC.swift; sourceTree = "<group>"; };
 		DC2ED1131F1DBB3800FB130C /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		DC2ED1151F1DD9B900FB130C /* LoadOrderHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadOrderHistory.swift; sourceTree = "<group>"; };
+		DC2ED1171F1DDA0900FB130C /* OrderHistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryVC.swift; sourceTree = "<group>"; };
+		DC2ED1191F1DDA6900FB130C /* OrderHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryCell.swift; sourceTree = "<group>"; };
+		DC2ED11B1F1E1A4600FB130C /* OrderHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
 		DC427A591ED98AC70001384D /* ConfirmedFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmedFormVC.swift; sourceTree = "<group>"; };
 		DC4454AA1F1324D800D7D413 /* LoadProductList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadProductList.swift; sourceTree = "<group>"; };
 		DC4454AC1F13AEAD00D7D413 /* CoffeeCellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeCellVC.swift; sourceTree = "<group>"; };
@@ -235,6 +243,8 @@
 				DCA31A2C1F16475600D8E83D /* DeleteCoffee.swift */,
 				DC9EACD01F1AF79700827F10 /* Order.swift */,
 				DC2ED10F1F1DB86F00FB130C /* LoadOrderList.swift */,
+				DC2ED1151F1DD9B900FB130C /* LoadOrderHistory.swift */,
+				DC2ED11B1F1E1A4600FB130C /* OrderHistory.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -245,6 +255,7 @@
 				DC605D931EF7933F00E3EFB8 /* CafeCell.swift */,
 				DCE77BD51F10D7150094E244 /* CoffeeCell.swift */,
 				DC2ED1131F1DBB3800FB130C /* OrderCell.swift */,
+				DC2ED1191F1DDA6900FB130C /* OrderHistoryCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -265,6 +276,7 @@
 				DC9F46EE1F0C855700F5B3C3 /* AddCoffeeVC.swift */,
 				DC4454AC1F13AEAD00D7D413 /* CoffeeCellVC.swift */,
 				DC2ED1111F1DB93600FB130C /* OrderManagementVC.swift */,
+				DC2ED1171F1DDA0900FB130C /* OrderHistoryVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -492,7 +504,9 @@
 				DC9F46ED1F0C84B500F5B3C3 /* CoffeeVC.swift in Sources */,
 				DC2ED1141F1DBB3800FB130C /* OrderCell.swift in Sources */,
 				DC58721C1F01F56A0077ED9F /* Cafe.swift in Sources */,
+				DC2ED1161F1DD9B900FB130C /* LoadOrderHistory.swift in Sources */,
 				DCADC9131EEA46F9007C1641 /* ImageFunctions.swift in Sources */,
+				DC2ED1181F1DDA0900FB130C /* OrderHistoryVC.swift in Sources */,
 				DC5554401EDD10F0009FF182 /* Login.swift in Sources */,
 				DC2ED1121F1DB93600FB130C /* OrderManagementVC.swift in Sources */,
 				DC605D941EF7933F00E3EFB8 /* CafeCell.swift in Sources */,
@@ -515,9 +529,11 @@
 				DCD860B11EE912B100840CF0 /* Update.swift in Sources */,
 				DCEA5D201EF2405700E6C1A1 /* MapVC.swift in Sources */,
 				DC58579E1EDA804200530E1B /* TextCheck.swift in Sources */,
+				DC2ED11C1F1E1A4600FB130C /* OrderHistory.swift in Sources */,
 				DC9F46F11F0CA3D000F5B3C3 /* CreateCoffee.swift in Sources */,
 				DCA31A2D1F16475600D8E83D /* DeleteCoffee.swift in Sources */,
 				DCB097CA1EDFC16F00F561A0 /* Profile.swift in Sources */,
+				DC2ED11A1F1DDA6900FB130C /* OrderHistoryCell.swift in Sources */,
 				DC66A3A91F15D8F400B5B55D /* UpdateCoffeeInfo.swift in Sources */,
 				DC427A5A1ED98AC70001384D /* ConfirmedFormVC.swift in Sources */,
 				DC19430D1ED69CD400711EC3 /* Constants.swift in Sources */,

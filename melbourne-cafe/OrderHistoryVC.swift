@@ -1,5 +1,5 @@
 //
-//  OrderManagementVC.swift
+//  OrderHistoryVC.swift
 //  melbourne-cafe
 //
 //  Created by Jing Gao on 18/7/17.
@@ -8,29 +8,29 @@
 
 import UIKit
 
-class OrderManagementVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class OrderHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var orderTableView: UITableView!
-    var loadOrderList = LoadOrderList()
+    @IBOutlet weak var orderHistoryTableView: UITableView!
+    var loadOrderHistory = LoadOrderHistory()
     
-    var orderArray = [Order]() {
+    var orderHistoryArray = [OrderHistory]() {
         didSet {
-            self.orderTableView.reloadData()
+            self.orderHistoryTableView.reloadData()
         }
     }
     
     var list:NSDictionary = [:] {
         didSet {
-            self.orderTableView.reloadData()
+            self.orderHistoryTableView.reloadData()
         }
     }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadOrderList.loadList(shopId: UserDefaults.standard.integer(forKey: "shopId"), completed: {self.updateList()})
-        
-        orderTableView.delegate = self
-        orderTableView.dataSource = self
+        loadOrderHistory.loadList(shopId: UserDefaults.standard.integer(forKey: "shopId"), completed: {self.updateList()})
+        self.orderHistoryTableView.delegate = self
+        self.orderHistoryTableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
@@ -49,30 +49,31 @@ class OrderManagementVC: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "OrderCell", for: indexPath) as? OrderCell else {
-            fatalError("The dequeued cell is not an instance of orderCell.")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "OrderHistory", for: indexPath) as? OrderHistoryCell else {
+            fatalError("The dequeued cell is not an instance of orderHistory.")
         }
         
-        cell.order = self.orderArray[indexPath.row]
+        cell.orderHistory = self.orderHistoryArray[indexPath.row]
         
         return cell
         
     }
     
     func updateList() {
-        list = loadOrderList.serverResponse.value(forKey: "data") as! NSDictionary
+        
+        list = loadOrderHistory.serverResponse.value(forKey: "data") as! NSDictionary
         
         for item in list {
-            let order = Order()
+            let orderHistory = OrderHistory()
             let data = item.value as! NSDictionary
-            order.ReferenceNumber = data["ReferenceNumber"] as! String
-            order.dateAndTime = data["dateAndTime"] as? String
-            order.message = data["message"] as! String
-            order.orderStatus = data["orderStatus"] as? String
-            orderArray.append(order)
+            orderHistory.ReferenceNumber = data["ReferenceNumber"] as! String
+            orderHistory.dateAndTime = data["dateAndTime"] as? String
+            orderHistory.message = data["message"] as! String
+            orderHistoryArray.append(orderHistory)
         }
         
-        self.orderTableView.reloadData()
+        self.orderHistoryTableView.reloadData()
+        
     }
     
 

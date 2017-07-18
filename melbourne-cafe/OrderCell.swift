@@ -12,6 +12,7 @@ class OrderCell: UITableViewCell {
     @IBOutlet weak var refNumberLbl: UILabel!
     @IBOutlet weak var orderTimeLbl: UILabel!
     @IBOutlet weak var descriptionTxt: UITextView!
+    @IBOutlet weak var orderStatusLbl: UILabel!
     
     var order: Order? {
         didSet {
@@ -23,6 +24,7 @@ class OrderCell: UITableViewCell {
         self.refNumberLbl.text = order?.ReferenceNumber
         self.orderTimeLbl.text = order?.dateAndTime
         self.descriptionTxt.text = order?.message
+        self.orderStatusLbl.text = order?.orderStatus
     }
     
 }
