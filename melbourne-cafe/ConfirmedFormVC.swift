@@ -39,9 +39,15 @@ class ConfirmedFormVC: UIViewController {
         register.createUser(name: nameText, password: pwdText, email: emailText, phone: phoneText, abn: abnText, address: addressText, completed: {self.updateUI()})
     }
     
-    func updateUI()
-    {
-       print("The result is \(register.serverResponse)")
+    func updateUI() {
+        if register.serverResponse == "User created successfully" {
+            print("The result is \(register.serverResponse)")
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let nextVC = storyBoard.instantiateViewController(withIdentifier: "login")
+            self.present(nextVC, animated: true, completion: nil)
+        } else {
+            print("The result is \(register.serverResponse)")
+        }
     }
     
     override func viewDidLoad() {

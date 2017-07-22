@@ -38,6 +38,10 @@ class SignUpFormVC: UIViewController {
     @IBAction func nextTapped(_ sender: Any) {
     }
     
+    @IBAction func backTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+
     
     
     override func viewDidLoad() {

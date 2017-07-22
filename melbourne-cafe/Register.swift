@@ -48,16 +48,20 @@ class Register {
             //printing response
             print(response)
             
-            //getting the json value from the server
-            if let result = response.result.value {
+            switch response.result {
+            case .success(let value):
                 
                 //converting it as NSDictionary
-                let jsonData = result as! NSDictionary
+                let jsonData = value as! NSDictionary
                 
                 //display the message in label
                 self._serverResponse = jsonData.value(forKey: "message") as! String?
-                print(self._serverResponse)
+                
+            case .failure(let error):
+                
+                self._serverResponse = "Error 4xx / 5xx: \(error)"
             }
+            
             
             completed()
             
