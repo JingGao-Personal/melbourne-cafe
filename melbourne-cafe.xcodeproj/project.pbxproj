@@ -115,6 +115,7 @@
 		DCAE88471F0B3C7D0049E14A /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		DCAEB3B91EE18D3300EED1D8 /* EditedProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditedProfileVC.swift; sourceTree = "<group>"; };
 		DCB097C91EDFC16F00F561A0 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		DCB58CC71F26C2180089D256 /* melbourne-cafe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "melbourne-cafe.entitlements"; sourceTree = "<group>"; };
 		DCC89A2C1EF6690A00087C9A /* CafeListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeListVC.swift; sourceTree = "<group>"; };
 		DCD860B01EE912B100840CF0 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		DCE77BD51F10D7150094E244 /* CoffeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeCell.swift; sourceTree = "<group>"; };
@@ -215,6 +216,7 @@
 		DC6196811ECD15920023C94B /* melbourne-cafe */ = {
 			isa = PBXGroup;
 			children = (
+				DCB58CC71F26C2180089D256 /* melbourne-cafe.entitlements */,
 				DCC778EE1ED557A4006A97A9 /* Model */,
 				DCC778EF1ED557AD006A97A9 /* View */,
 				DCC778F01ED557B3006A97A9 /* Controller */,
@@ -375,10 +377,16 @@
 					};
 					DC61967E1ECD15920023C94B = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 36T8EM67R4;
+						DevelopmentTeam = Y5VHUR42M4;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
 							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.Push = {
 								enabled = 0;
 							};
 						};
@@ -720,10 +728,10 @@
 			baseConfigurationReference = F3F1DDB17DB1B57E4D25CBE8 /* Pods-melbourne-cafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 36T8EM67R4;
+				DEVELOPMENT_TEAM = Y5VHUR42M4;
 				INFOPLIST_FILE = "melbourne-cafe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jinggao.melbourne-cafe";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinggao.melbournecafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -734,10 +742,10 @@
 			baseConfigurationReference = 59AB041E6C7DB3CC20ACEB77 /* Pods-melbourne-cafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 36T8EM67R4;
+				DEVELOPMENT_TEAM = Y5VHUR42M4;
 				INFOPLIST_FILE = "melbourne-cafe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jinggao.melbourne-cafe";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinggao.melbournecafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
