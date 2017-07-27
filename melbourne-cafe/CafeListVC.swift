@@ -15,6 +15,7 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     var locationManager = CLLocationManager()
     var loadCafeList = LoadCafeList()
     var imageFunctions = ImageFunctions()
+    var cafeInfoArray = [Cafe]()
     var cafeArray = [Cafe]() {
         didSet
         {
@@ -85,6 +86,7 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
             cafe.distance = coordinate.distance(from: currentLocation!)
             
             cafeArray.append(cafe)
+            cafeInfoArray.append(cafe)
             
             if cafe.imagePath == "" {
                 imageFunctions.loadImage(url: DEFAULT_IMAGE_URL, complete: {cafe.image = self.imageFunctions._image
@@ -112,6 +114,7 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     
     // MARK: - Navigation
     var selectedCafe:Cafe?
+    var test = "test"
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowCafeCellVC" {
@@ -119,7 +122,18 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
             vc.cafe = selectedCafe!
             
         }
+        
+        if segue.identifier == "showLocations" {
+            let vc = segue.destination as! MapVC
+            vc.cafe = cafeInfoArray
+//            vc.test = test
+        }
     }
+    
+    @IBAction func mapTapped(_ sender: Any) {
+//        performSegue(withIdentifier: "showLocations", sender: self)
+    }
+    
     
     
 }

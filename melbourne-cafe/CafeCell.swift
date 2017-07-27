@@ -12,7 +12,6 @@ class CafeCell: UITableViewCell {
     
     @IBOutlet weak var infoImage: UIImageView!
     @IBOutlet weak var cafeName: UILabel!
-    @IBOutlet weak var stars: UILabel!
     @IBOutlet weak var distance: UILabel!
     
 //    var imageFunctions = ImageFunctions()
