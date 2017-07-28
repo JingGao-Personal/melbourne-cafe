@@ -26,8 +26,6 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
         mapView.setRegion(region, animated: true)
         mapView.showsUserLocation = true
-        
-        
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

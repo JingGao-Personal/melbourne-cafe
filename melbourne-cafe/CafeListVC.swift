@@ -34,6 +34,10 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        
         loadCafeList.loadList(email: UserDefaults.standard.string(forKey: "email")!, completed: {self.updateList()})
         
         cafeTableView.delegate = self
