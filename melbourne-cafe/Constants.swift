@@ -8,9 +8,9 @@
 
 import Foundation
 
-//let SERVER_IP = "http://127.0.0.1:8888/"
+let SERVER_IP = "http://127.0.0.1:8888/"
 
-let SERVER_IP = "http://192.168.0.22:8888/"
+//let SERVER_IP = "http://192.168.0.22:8888/"
 
 let REGISTER_URL = SERVER_IP + "cafeshop/register.php"
 let LOGIN_URL = SERVER_IP + "cafeshop/login.php"

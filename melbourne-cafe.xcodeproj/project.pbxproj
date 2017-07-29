@@ -44,6 +44,7 @@
 		DCAE88481F0B3C7D0049E14A /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAE88471F0B3C7D0049E14A /* Coffee.swift */; };
 		DCAEB3BA1EE18D3300EED1D8 /* EditedProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAEB3B91EE18D3300EED1D8 /* EditedProfileVC.swift */; };
 		DCB097CA1EDFC16F00F561A0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB097C91EDFC16F00F561A0 /* Profile.swift */; };
+		DCC203C91F2B64E500A6C21A /* OtherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC203C81F2B64E500A6C21A /* OtherLocation.swift */; };
 		DCC89A2D1EF6690A00087C9A /* CafeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC89A2C1EF6690A00087C9A /* CafeListVC.swift */; };
 		DCD860B11EE912B100840CF0 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD860B01EE912B100840CF0 /* Update.swift */; };
 		DCE77BD61F10D7150094E244 /* CoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE77BD51F10D7150094E244 /* CoffeeCell.swift */; };
@@ -116,6 +117,7 @@
 		DCAEB3B91EE18D3300EED1D8 /* EditedProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditedProfileVC.swift; sourceTree = "<group>"; };
 		DCB097C91EDFC16F00F561A0 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DCB58CC71F26C2180089D256 /* melbourne-cafe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "melbourne-cafe.entitlements"; sourceTree = "<group>"; };
+		DCC203C81F2B64E500A6C21A /* OtherLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherLocation.swift; sourceTree = "<group>"; };
 		DCC89A2C1EF6690A00087C9A /* CafeListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeListVC.swift; sourceTree = "<group>"; };
 		DCD860B01EE912B100840CF0 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		DCE77BD51F10D7150094E244 /* CoffeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeCell.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				DC2ED10F1F1DB86F00FB130C /* LoadOrderList.swift */,
 				DC2ED1151F1DD9B900FB130C /* LoadOrderHistory.swift */,
 				DC2ED11B1F1E1A4600FB130C /* OrderHistory.swift */,
+				DCC203C81F2B64E500A6C21A /* OtherLocation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				DC6418F91EDE68190049922C /* TabBarVC.swift in Sources */,
 				DC5554421EDD13CA009FF182 /* LoginVC.swift in Sources */,
 				DC6418F51EDE4BDC0049922C /* ProfileVC.swift in Sources */,
+				DCC203C91F2B64E500A6C21A /* OtherLocation.swift in Sources */,
 				DCAEB3BA1EE18D3300EED1D8 /* EditedProfileVC.swift in Sources */,
 				DCE77BD61F10D7150094E244 /* CoffeeCell.swift in Sources */,
 				DC9EACD11F1AF79700827F10 /* Order.swift in Sources */,

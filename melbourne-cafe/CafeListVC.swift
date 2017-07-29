@@ -84,7 +84,9 @@ class CafeListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
             cafe.cafeName = data["Name"] as! String
             cafe.imagePath = data["IFNULL(Image, '')"] as! String
             let latitude = data["Latitude"] as! String
+            cafe.latitude = Double(data["Latitude"] as! String)!
             let longtitude = data["Longtitude"] as! String
+            cafe.longtitude = Double(data["Longtitude"] as! String)!
             let coordinate = CLLocation(latitude: Double(latitude)!, longitude: Double(longtitude)!)
             let currentLocation = locationManager.location
             cafe.distance = coordinate.distance(from: currentLocation!)

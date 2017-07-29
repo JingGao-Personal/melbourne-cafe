@@ -16,7 +16,6 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
     var cafe = [Cafe]()
-    var test = String()
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
@@ -24,8 +23,10 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         let span:MKCoordinateSpan = MKCoordinateSpanMake(0.005, 0.005)
         let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
         let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        
         mapView.setRegion(region, animated: true)
         mapView.showsUserLocation = true
+
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -35,13 +36,21 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print(cafe.count)
-//        print(test)
+        //        print(cafe.count)
+        //        print(test)
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = 20
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
+        test()
+        
+//        let annotation = MKPointAnnotation()
+//        annotation.coordinate = CLLocationCoordinate2DMake(cafe[1].latitude, cafe[1].longtitude)
+//        annotation.title = cafe[0].cafeName
+//        annotation.subtitle = "This is the test"
+//        mapView.addAnnotation(annotation)
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,6 +58,13 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     }
     @IBAction func backTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func test() {
+        for i in 0...(cafe.count - 1) {
+            let newLocation = OtherLocation(title: cafe[i].cafeName, coordinate: CLLocationCoordinate2D(latitude: cafe[i].latitude, longitude: cafe[i].longtitude))
+            mapView.addAnnotation(newLocation)
+        }
     }
     
     
