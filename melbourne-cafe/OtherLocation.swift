@@ -10,11 +10,16 @@ import Foundation
 import MapKit
 
 class OtherLocation: NSObject, MKAnnotation {
+    
+    var identifier: String?
     var title: String?
+    var subtitle: String?
     var coordinate: CLLocationCoordinate2D
     
-    init(title: String, coordinate: CLLocationCoordinate2D) {
+    init(identifier: String, title: String, subtitle: Double, coordinate: CLLocationCoordinate2D) {
+        self.identifier = identifier
         self.title = title
+        self.subtitle = String(format: "%.2f", subtitle) + " m"
         self.coordinate = coordinate
     }
     

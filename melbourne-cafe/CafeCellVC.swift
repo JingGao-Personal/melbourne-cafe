@@ -14,6 +14,7 @@ class CafeCellVC: UIViewController {
     
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var cafeImage: UIImageView!
+    @IBOutlet weak var distanceLbl: UILabel!
     
 
     override func viewDidLoad() {
@@ -23,6 +24,7 @@ class CafeCellVC: UIViewController {
         
         self.nameLbl.text = cafe.cafeName
         self.cafeImage.image = cafe.image
+        self.distanceLbl.text = String(format: "%.2f", cafe!.distance) + " m"
         
     }
 

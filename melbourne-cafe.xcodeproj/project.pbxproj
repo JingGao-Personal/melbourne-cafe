@@ -46,6 +46,7 @@
 		DCB097CA1EDFC16F00F561A0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB097C91EDFC16F00F561A0 /* Profile.swift */; };
 		DCC203C91F2B64E500A6C21A /* OtherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC203C81F2B64E500A6C21A /* OtherLocation.swift */; };
 		DCC89A2D1EF6690A00087C9A /* CafeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC89A2C1EF6690A00087C9A /* CafeListVC.swift */; };
+		DCD5FED61F2EF2A80021CA0F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA5D231EF2549B00E6C1A1 /* MapKit.framework */; };
 		DCD860B11EE912B100840CF0 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD860B01EE912B100840CF0 /* Update.swift */; };
 		DCE77BD61F10D7150094E244 /* CoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE77BD51F10D7150094E244 /* CoffeeCell.swift */; };
 		DCE7CDCB1EDE77BC00D72D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE7CDCA1EDE77BC00D72D1D /* Main.storyboard */; };
@@ -149,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCEA5D221EF2441A00E6C1A1 /* CoreLocation.framework in Frameworks */,
+				DCD5FED61F2EF2A80021CA0F /* MapKit.framework in Frameworks */,
 				E00407F926C779BB4994DDE9 /* Pods_melbourne_cafe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +389,7 @@
 								enabled = 0;
 							};
 							com.apple.Maps.iOS = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.Push = {
 								enabled = 0;

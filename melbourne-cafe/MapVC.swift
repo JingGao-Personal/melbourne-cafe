@@ -45,6 +45,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
         
         test()
+        mapView.delegate = self
         
 //        let annotation = MKPointAnnotation()
 //        annotation.coordinate = CLLocationCoordinate2DMake(cafe[1].latitude, cafe[1].longtitude)
@@ -62,9 +63,32 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     func test() {
         for i in 0...(cafe.count - 1) {
-            let newLocation = OtherLocation(title: cafe[i].cafeName, coordinate: CLLocationCoordinate2D(latitude: cafe[i].latitude, longitude: cafe[i].longtitude))
+            let newLocation = OtherLocation(identifier: "OtherLocation", title: cafe[i].cafeName, subtitle: cafe[i].distance, coordinate: CLLocationCoordinate2D(latitude: cafe[i].latitude, longitude: cafe[i].longtitude))
             mapView.addAnnotation(newLocation)
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let identifier = "OtherLocation"
+        
+        if annotation is OtherLocation {
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
+            
+            if annotationView == nil {
+                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView!.canShowCallout = true
+                
+                let btn = UIButton(type: .detailDisclosure)
+                annotationView!.rightCalloutAccessoryView = btn
+            } else {
+                annotationView!.annotation = annotation
+            }
+            
+            return annotationView
+        }
+        
+        return nil
+        
     }
     
     
