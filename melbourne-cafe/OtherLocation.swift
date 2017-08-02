@@ -15,8 +15,10 @@ class OtherLocation: NSObject, MKAnnotation {
     var title: String?
     var subtitle: String?
     var coordinate: CLLocationCoordinate2D
+    var imagePath: String?
     
-    init(identifier: String, title: String, subtitle: Double, coordinate: CLLocationCoordinate2D) {
+    init(imagePath: String, identifier: String, title: String, subtitle: Double, coordinate: CLLocationCoordinate2D) {
+        self.imagePath = imagePath
         self.identifier = identifier
         self.title = title
         self.subtitle = String(format: "%.2f", subtitle) + " m"

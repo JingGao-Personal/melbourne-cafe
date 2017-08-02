@@ -16,6 +16,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
     var cafe = [Cafe]()
+    var imageFunctions = ImageFunctions()
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
@@ -44,7 +45,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-        test()
+        loadAnnotations()
         mapView.delegate = self
         
 //        let annotation = MKPointAnnotation()
@@ -61,9 +62,9 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         dismiss(animated: true, completion: nil)
     }
     
-    func test() {
+    func loadAnnotations() {
         for i in 0...(cafe.count - 1) {
-            let newLocation = OtherLocation(identifier: "OtherLocation", title: cafe[i].cafeName, subtitle: cafe[i].distance, coordinate: CLLocationCoordinate2D(latitude: cafe[i].latitude, longitude: cafe[i].longtitude))
+            let newLocation = OtherLocation(imagePath: cafe[i].imagePath, identifier: "OtherLocation", title: cafe[i].cafeName, subtitle: cafe[i].distance, coordinate: CLLocationCoordinate2D(latitude: cafe[i].latitude, longitude: cafe[i].longtitude))
             mapView.addAnnotation(newLocation)
         }
     }
@@ -77,6 +78,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             if annotationView == nil {
                 annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 annotationView!.canShowCallout = true
+
                 
                 let btn = UIButton(type: .detailDisclosure)
                 annotationView!.rightCalloutAccessoryView = btn
@@ -90,6 +92,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         return nil
         
     }
+    
     
     
     
