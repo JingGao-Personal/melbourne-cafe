@@ -27,6 +27,7 @@ class OrderManagementVC: UIViewController, UITableViewDataSource, UITableViewDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.orderTableView.reloadData()
         loadOrderList.loadList(shopId: UserDefaults.standard.integer(forKey: "shopId"), completed: {self.updateList()})
         
         orderTableView.delegate = self
