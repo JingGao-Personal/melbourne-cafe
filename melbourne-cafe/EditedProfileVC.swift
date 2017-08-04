@@ -163,10 +163,7 @@ class EditedProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     }
     
     @IBAction func backTapped(_ sender: Any) {
-//        self.dismiss(animated: true, completion: nil)
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let nextVC = storyBoard.instantiateViewController(withIdentifier: "profile")
-//        self.present(nextVC, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func uploadTapped(_ sender: Any) {

@@ -14,6 +14,8 @@ class CoffeeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var loadProductList = LoadProductList()
     var imageFunctions = ImageFunctions()
     
+    private let refreshControl = UIRefreshControl()
+    
     var coffeeArray = [Coffee]() {
         didSet
         {
@@ -31,14 +33,21 @@ class CoffeeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         loadProductList.loadList(shopId: UserDefaults.standard.integer(forKey: "shopId"), completed: {self.updateList()})
         
         coffeeTableView.delegate = self
         coffeeTableView.dataSource = self
+        
 
         // Do any additional setup after loading the view.
     }
-
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(true)
+//        loadProductList.loadList(shopId: UserDefaults.standard.integer(forKey: "shopId"), completed: {self.updateList()})
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

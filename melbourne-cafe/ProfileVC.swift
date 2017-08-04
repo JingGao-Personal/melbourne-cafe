@@ -30,6 +30,11 @@ class ProfileVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        profile.myProfile(email: UserDefaults.standard.string(forKey: "email")!, completed: {self.update()})
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
