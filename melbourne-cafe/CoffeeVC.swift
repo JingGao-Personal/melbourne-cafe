@@ -9,7 +9,7 @@
 import UIKit
 
 class CoffeeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet weak var coffeeTableView: UITableView!
     var loadProductList = LoadProductList()
     var imageFunctions = ImageFunctions()
@@ -39,14 +39,19 @@ class CoffeeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         coffeeTableView.delegate = self
         coffeeTableView.dataSource = self
         
-
+        
         // Do any additional setup after loading the view.
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(true)
-//        loadProductList.loadList(shopId: UserDefaults.standard.integer(forKey: "shopId"), completed: {self.updateList()})
-//    }
+    //    override func viewWillAppear(_ animated: Bool) {
+    //        coffeeTableView.reloadData()
+    //    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        loadProductList.loadList(shopId: UserDefaults.standard.integer(forKey: "shopId"), completed: {self.updateList()})
+        
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -64,7 +69,7 @@ class CoffeeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard  let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeCell", for: indexPath) as? CoffeeCell
             else {
-            fatalError("The dequeued cell is not an instance of cafeCell.")
+                fatalError("The dequeued cell is not an instance of cafeCell.")
         }
         
         cell.coffee = self.coffeeArray[indexPath.row]
@@ -95,7 +100,7 @@ class CoffeeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 })
                 
             }
-
+            
         }
         
         self.coffeeTableView.reloadData()
@@ -115,15 +120,15 @@ class CoffeeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
